@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--First View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="FirstViewController" customModule="GamerTrivia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="SEs-MV-Ebd">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gamer Trivia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6s-jn-zhC">
+                                <rect key="frame" x="72" y="119" width="270" height="41"/>
+                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VTX-k7-ceQ" userLabel="FirstButton">
+                                <rect key="frame" x="64.5" y="513.5" width="285" height="69"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="One Player" backgroundImage="player_button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="One_Player_Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nEQ-je-Dv9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6sx-FR-JK4" userLabel="SecondButton">
+                                <rect key="frame" x="64.5" y="632.5" width="285" height="69"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Two Player" backgroundImage="player_button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="Two_Player_Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2MY-rB-X9E"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6sx-FR-JK4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AA6-27-cgn"/>
+                            <constraint firstItem="VTX-k7-ceQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="100" id="EEK-1h-xzU"/>
+                            <constraint firstItem="SEs-MV-Ebd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="JlR-Vq-nSO"/>
+                            <constraint firstItem="b6s-jn-zhC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Tkg-Ho-vOl"/>
+                            <constraint firstItem="b6s-jn-zhC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="75" id="cXq-Zg-3LL"/>
+                            <constraint firstAttribute="trailing" secondItem="SEs-MV-Ebd" secondAttribute="trailing" id="cni-ng-xW8"/>
+                            <constraint firstItem="b6s-jn-zhC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fjh-hf-qkR"/>
+                            <constraint firstItem="SEs-MV-Ebd" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="pcP-0V-TOh"/>
+                            <constraint firstItem="6sx-FR-JK4" firstAttribute="top" secondItem="VTX-k7-ceQ" secondAttribute="bottom" constant="50" id="vRE-aG-4s7"/>
+                            <constraint firstItem="VTX-k7-ceQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vrV-zP-JDK"/>
+                            <constraint firstAttribute="bottom" secondItem="SEs-MV-Ebd" secondAttribute="bottom" id="ypI-Co-rPK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="qah-ep-Pyq" kind="showDetail" identifier="GenreViewSegue" id="XA7-FU-Sap"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133" y="117"/>
+        </scene>
+        <!--Genre Screen Controller-->
+        <scene sceneID="AVk-i9-OH9">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7XB-Jd-UTf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="qah-ep-Pyq" customClass="GenreScreenController" customModule="GamerTrivia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J2l-ZN-wSs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="7eN-bm-woV">
+                                <rect key="frame" x="0.0" y="-27" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick A Genre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MxW-Oc-pt8">
+                                <rect key="frame" x="71.5" y="75" width="271.5" height="41"/>
+                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="uA7-xb-Rd9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MxW-Oc-pt8" firstAttribute="top" secondItem="J2l-ZN-wSs" secondAttribute="topMargin" constant="75" id="adw-78-Tga"/>
+                            <constraint firstItem="MxW-Oc-pt8" firstAttribute="centerX" secondItem="J2l-ZN-wSs" secondAttribute="centerX" id="xFs-5O-wzX"/>
+                        </constraints>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1018.840579710145" y="116.51785714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="414" height="896"/>
+        <image name="player_button" width="285" height="69"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
