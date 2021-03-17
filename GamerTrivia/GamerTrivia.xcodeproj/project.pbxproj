@@ -17,6 +17,7 @@
 		B932AA5225FA6DF4009CD43E /* GamerTriviaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B932AA5125FA6DF4009CD43E /* GamerTriviaUITests.swift */; };
 		B932AA6625FAC90C009CD43E /* GenreScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B932AA6525FAC90C009CD43E /* GenreScreenController.swift */; };
 		B932AA7125FACFAB009CD43E /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B932AA7025FACFAB009CD43E /* FirstViewController.swift */; };
+		B932AA7626029D22009CD43E /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = B932AA7526029D22009CD43E /* Category.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		B932AA5325FA6DF4009CD43E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B932AA6525FAC90C009CD43E /* GenreScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreScreenController.swift; sourceTree = "<group>"; };
 		B932AA7025FACFAB009CD43E /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		B932AA7526029D22009CD43E /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				B932AA2E25FA6DEF009CD43E /* SceneDelegate.swift */,
 				B932AA6525FAC90C009CD43E /* GenreScreenController.swift */,
 				B932AA3225FA6DEF009CD43E /* Main.storyboard */,
+				B932AA7526029D22009CD43E /* Category.swift */,
 				B932AA3825FA6DF4009CD43E /* Assets.xcassets */,
 				B932AA3A25FA6DF4009CD43E /* LaunchScreen.storyboard */,
 				B932AA3D25FA6DF4009CD43E /* Info.plist */,
@@ -269,6 +272,7 @@
 				B932AA2D25FA6DEF009CD43E /* AppDelegate.swift in Sources */,
 				B932AA2F25FA6DEF009CD43E /* SceneDelegate.swift in Sources */,
 				B932AA3725FA6DEF009CD43E /* GamerTrivia.xcdatamodeld in Sources */,
+				B932AA7626029D22009CD43E /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
