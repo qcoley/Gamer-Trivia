@@ -11,20 +11,19 @@ import UIKit
 class FirstViewController: UIViewController {
     
     
-    @IBAction func One_Player_Button(_ sender: Any) {
-        
-        self.performSegue(withIdentifier: "GenreViewSegue", sender: self) }
+    @IBAction func One_Player_Button() {
+        let vc = storyboard?.instantiateViewController(identifier: "genre") as! CategoryViewController
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true)
+    }
     
-    
-    @IBAction func Two_Player_Button(_ sender: Any) {
-        
-        print("button pressed")
-        self.performSegue(withIdentifier: "GenreViewSegue", sender: self) }
+   @IBAction func Two_Player_Button() {
+        let vc = storyboard?.instantiateViewController(identifier: "genre") as! CategoryViewController
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true)
+    }
     
     
     override func viewDidLoad() {
-        
         super.viewDidLoad()
-        
-    
     }}

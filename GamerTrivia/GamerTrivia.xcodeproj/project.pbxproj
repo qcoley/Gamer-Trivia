@@ -10,14 +10,14 @@
 		B932AA2D25FA6DEF009CD43E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B932AA2C25FA6DEF009CD43E /* AppDelegate.swift */; };
 		B932AA2F25FA6DEF009CD43E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B932AA2E25FA6DEF009CD43E /* SceneDelegate.swift */; };
 		B932AA3425FA6DEF009CD43E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B932AA3225FA6DEF009CD43E /* Main.storyboard */; };
-		B932AA3725FA6DEF009CD43E /* GamerTrivia.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B932AA3525FA6DEF009CD43E /* GamerTrivia.xcdatamodeld */; };
 		B932AA3925FA6DF4009CD43E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B932AA3825FA6DF4009CD43E /* Assets.xcassets */; };
 		B932AA3C25FA6DF4009CD43E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B932AA3A25FA6DF4009CD43E /* LaunchScreen.storyboard */; };
 		B932AA4725FA6DF4009CD43E /* GamerTriviaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B932AA4625FA6DF4009CD43E /* GamerTriviaTests.swift */; };
 		B932AA5225FA6DF4009CD43E /* GamerTriviaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B932AA5125FA6DF4009CD43E /* GamerTriviaUITests.swift */; };
-		B932AA6625FAC90C009CD43E /* GenreScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B932AA6525FAC90C009CD43E /* GenreScreenController.swift */; };
+		B932AA6625FAC90C009CD43E /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B932AA6525FAC90C009CD43E /* CategoryViewController.swift */; };
 		B932AA7125FACFAB009CD43E /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B932AA7025FACFAB009CD43E /* FirstViewController.swift */; };
 		B932AA7626029D22009CD43E /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = B932AA7526029D22009CD43E /* Category.swift */; };
+		ECCA9A952603E72C00CB1EFF /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCA9A942603E72C00CB1EFF /* GameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +42,6 @@
 		B932AA2C25FA6DEF009CD43E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B932AA2E25FA6DEF009CD43E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B932AA3325FA6DEF009CD43E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B932AA3625FA6DEF009CD43E /* GamerTrivia.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GamerTrivia.xcdatamodel; sourceTree = "<group>"; };
 		B932AA3825FA6DF4009CD43E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B932AA3B25FA6DF4009CD43E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B932AA3D25FA6DF4009CD43E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,9 +51,10 @@
 		B932AA4D25FA6DF4009CD43E /* GamerTriviaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GamerTriviaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B932AA5125FA6DF4009CD43E /* GamerTriviaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamerTriviaUITests.swift; sourceTree = "<group>"; };
 		B932AA5325FA6DF4009CD43E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B932AA6525FAC90C009CD43E /* GenreScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreScreenController.swift; sourceTree = "<group>"; };
+		B932AA6525FAC90C009CD43E /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		B932AA7025FACFAB009CD43E /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		B932AA7526029D22009CD43E /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		ECCA9A942603E72C00CB1EFF /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +86,8 @@
 			isa = PBXGroup;
 			children = (
 				B932AA7025FACFAB009CD43E /* FirstViewController.swift */,
-				B932AA6525FAC90C009CD43E /* GenreScreenController.swift */,
+				B932AA6525FAC90C009CD43E /* CategoryViewController.swift */,
+				ECCA9A942603E72C00CB1EFF /* GameViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -114,6 +115,8 @@
 		B932AA2B25FA6DEF009CD43E /* GamerTrivia */ = {
 			isa = PBXGroup;
 			children = (
+				ECCA9A882603DEFB00CB1EFF /* view */,
+				ECCA9A842603DEE400CB1EFF /* model */,
 				A561922E2602C8320062272A /* controllers */,
 				B932AA2C25FA6DEF009CD43E /* AppDelegate.swift */,
 				B932AA2E25FA6DEF009CD43E /* SceneDelegate.swift */,
@@ -122,7 +125,6 @@
 				B932AA3825FA6DF4009CD43E /* Assets.xcassets */,
 				B932AA3A25FA6DF4009CD43E /* LaunchScreen.storyboard */,
 				B932AA3D25FA6DF4009CD43E /* Info.plist */,
-				B932AA3525FA6DEF009CD43E /* GamerTrivia.xcdatamodeld */,
 			);
 			path = GamerTrivia;
 			sourceTree = "<group>";
@@ -143,6 +145,20 @@
 				B932AA5325FA6DF4009CD43E /* Info.plist */,
 			);
 			path = GamerTriviaUITests;
+			sourceTree = "<group>";
+		};
+		ECCA9A842603DEE400CB1EFF /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		ECCA9A882603DEFB00CB1EFF /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,11 +291,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECCA9A952603E72C00CB1EFF /* GameViewController.swift in Sources */,
 				B932AA7125FACFAB009CD43E /* FirstViewController.swift in Sources */,
-				B932AA6625FAC90C009CD43E /* GenreScreenController.swift in Sources */,
+				B932AA6625FAC90C009CD43E /* CategoryViewController.swift in Sources */,
 				B932AA2D25FA6DEF009CD43E /* AppDelegate.swift in Sources */,
 				B932AA2F25FA6DEF009CD43E /* SceneDelegate.swift in Sources */,
-				B932AA3725FA6DEF009CD43E /* GamerTrivia.xcdatamodeld in Sources */,
 				B932AA7626029D22009CD43E /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -613,19 +629,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		B932AA3525FA6DEF009CD43E /* GamerTrivia.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				B932AA3625FA6DEF009CD43E /* GamerTrivia.xcdatamodel */,
-			);
-			currentVersion = B932AA3625FA6DEF009CD43E /* GamerTrivia.xcdatamodel */;
-			path = GamerTrivia.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = B932AA2125FA6DEF009CD43E /* Project object */;
 }

@@ -7,31 +7,39 @@
 
 import UIKit
 
-class GenreScreenController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class CategoryViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var categories: [Category] = []
     
-    @IBOutlet var categoryScreen: UIView!
-    @IBOutlet weak var categoryTable: UITableView!
 
+    @IBOutlet weak var Label: UILabel!
+    @IBOutlet weak var Table: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        categoryTable.delegate = self
-        categoryTable.dataSource = self
+        Table.delegate = self
+        Table.dataSource = self
         categories = createArray()
+    }
+    
+    @IBAction func startGame() {
+        let vc = storyboard?.instantiateViewController(identifier: "game") as! GameViewController
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true)
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         let indexPath = IndexPath(row: 0, section: 0)
         // Select the first row by default
-        categoryTable.selectRow(at: indexPath, animated: true, scrollPosition: .bottom)
-        categoryTable.delegate?.tableView?(categoryTable, didSelectRowAt: indexPath)
+        Table.selectRow(at: indexPath, animated: true, scrollPosition: .bottom)
+        Table.delegate?.tableView?(Table, didSelectRowAt: indexPath)
     }
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return categories.count }
+        return categories.count
+    }
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
