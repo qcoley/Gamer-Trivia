@@ -155,9 +155,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lmL-ty-r5w">
-                                <rect key="frame" x="0.0" y="304" width="414" height="558"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lmL-ty-r5w">
+                                <rect key="frame" x="0.0" y="314.5" width="414" height="547.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="9fl-og-Mvd">
@@ -175,6 +174,10 @@
                         <color key="backgroundColor" systemColor="systemRedColor"/>
                         <constraints>
                             <constraint firstItem="fiX-JP-lpJ" firstAttribute="trailing" secondItem="RTq-Qz-98w" secondAttribute="trailing" constant="10" id="JwV-Zy-uR6"/>
+                            <constraint firstItem="lmL-ty-r5w" firstAttribute="firstBaseline" secondItem="RTq-Qz-98w" secondAttribute="baseline" constant="17" symbolType="layoutAnchor" id="awE-VK-zMF"/>
+                            <constraint firstItem="fiX-JP-lpJ" firstAttribute="bottom" secondItem="lmL-ty-r5w" secondAttribute="bottom" id="dhs-6d-onv"/>
+                            <constraint firstItem="lmL-ty-r5w" firstAttribute="leading" secondItem="fiX-JP-lpJ" secondAttribute="leading" id="lTa-F0-nr7"/>
+                            <constraint firstItem="fiX-JP-lpJ" firstAttribute="trailing" secondItem="lmL-ty-r5w" secondAttribute="trailing" id="tFb-wS-chk"/>
                             <constraint firstItem="RTq-Qz-98w" firstAttribute="top" secondItem="fiX-JP-lpJ" secondAttribute="top" constant="10" id="yYn-CF-9IZ"/>
                             <constraint firstItem="RTq-Qz-98w" firstAttribute="leading" secondItem="fiX-JP-lpJ" secondAttribute="leading" constant="10" id="yjZ-wR-7ab"/>
                         </constraints>
