@@ -147,9 +147,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RTq-Qz-98w" userLabel="Question Label">
-                                <rect key="frame" x="10" y="64" width="394" height="250"/>
+                                <rect key="frame" x="10" y="96" width="394" height="218"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="250" id="8zF-gX-V8Q"/>
+                                    <constraint firstAttribute="height" constant="218" id="8zF-gX-V8Q"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -187,7 +187,7 @@
                             <constraint firstItem="fiX-JP-lpJ" firstAttribute="trailing" secondItem="Pou-af-V0n" secondAttribute="trailing" constant="20" id="gtT-DC-7hd"/>
                             <constraint firstItem="lmL-ty-r5w" firstAttribute="leading" secondItem="fiX-JP-lpJ" secondAttribute="leading" id="lTa-F0-nr7"/>
                             <constraint firstItem="fiX-JP-lpJ" firstAttribute="trailing" secondItem="lmL-ty-r5w" secondAttribute="trailing" id="tFb-wS-chk"/>
-                            <constraint firstItem="RTq-Qz-98w" firstAttribute="top" secondItem="Pou-af-V0n" secondAttribute="top" id="xau-Ot-pCl"/>
+                            <constraint firstItem="RTq-Qz-98w" firstAttribute="top" secondItem="Pou-af-V0n" secondAttribute="top" constant="32" id="xau-Ot-pCl"/>
                             <constraint firstItem="RTq-Qz-98w" firstAttribute="leading" secondItem="fiX-JP-lpJ" secondAttribute="leading" constant="10" id="yjZ-wR-7ab"/>
                         </constraints>
                     </view>
