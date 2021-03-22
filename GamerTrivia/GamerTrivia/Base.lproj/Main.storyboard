@@ -146,8 +146,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RTq-Qz-98w">
-                                <rect key="frame" x="10" y="54" width="394" height="250"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RTq-Qz-98w" userLabel="Question Label">
+                                <rect key="frame" x="10" y="64" width="394" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="8zF-gX-V8Q"/>
                                 </constraints>
@@ -155,8 +155,14 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pou-af-V0n" userLabel="Score Label">
+                                <rect key="frame" x="20" y="64" width="374" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lmL-ty-r5w">
-                                <rect key="frame" x="0.0" y="314.5" width="414" height="547.5"/>
+                                <rect key="frame" x="0.0" y="324.5" width="414" height="537.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="9fl-og-Mvd">
@@ -173,23 +179,27 @@
                         <viewLayoutGuide key="safeArea" id="fiX-JP-lpJ"/>
                         <color key="backgroundColor" systemColor="systemRedColor"/>
                         <constraints>
+                            <constraint firstItem="Pou-af-V0n" firstAttribute="leading" secondItem="fiX-JP-lpJ" secondAttribute="leading" constant="20" id="410-R4-ejj"/>
                             <constraint firstItem="fiX-JP-lpJ" firstAttribute="trailing" secondItem="RTq-Qz-98w" secondAttribute="trailing" constant="10" id="JwV-Zy-uR6"/>
+                            <constraint firstItem="Pou-af-V0n" firstAttribute="top" secondItem="fiX-JP-lpJ" secondAttribute="top" constant="20" id="RZJ-JV-Q59"/>
                             <constraint firstItem="lmL-ty-r5w" firstAttribute="firstBaseline" secondItem="RTq-Qz-98w" secondAttribute="baseline" constant="17" symbolType="layoutAnchor" id="awE-VK-zMF"/>
                             <constraint firstItem="fiX-JP-lpJ" firstAttribute="bottom" secondItem="lmL-ty-r5w" secondAttribute="bottom" id="dhs-6d-onv"/>
+                            <constraint firstItem="fiX-JP-lpJ" firstAttribute="trailing" secondItem="Pou-af-V0n" secondAttribute="trailing" constant="20" id="gtT-DC-7hd"/>
                             <constraint firstItem="lmL-ty-r5w" firstAttribute="leading" secondItem="fiX-JP-lpJ" secondAttribute="leading" id="lTa-F0-nr7"/>
                             <constraint firstItem="fiX-JP-lpJ" firstAttribute="trailing" secondItem="lmL-ty-r5w" secondAttribute="trailing" id="tFb-wS-chk"/>
-                            <constraint firstItem="RTq-Qz-98w" firstAttribute="top" secondItem="fiX-JP-lpJ" secondAttribute="top" constant="10" id="yYn-CF-9IZ"/>
+                            <constraint firstItem="RTq-Qz-98w" firstAttribute="top" secondItem="Pou-af-V0n" secondAttribute="top" id="xau-Ot-pCl"/>
                             <constraint firstItem="RTq-Qz-98w" firstAttribute="leading" secondItem="fiX-JP-lpJ" secondAttribute="leading" constant="10" id="yjZ-wR-7ab"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="label" destination="RTq-Qz-98w" id="kpy-2v-snV"/>
+                        <outlet property="scoreLabel" destination="Pou-af-V0n" id="jgy-Tz-Jag"/>
                         <outlet property="table" destination="lmL-ty-r5w" id="wJT-vt-JBg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Z7-fP-RKs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2828" y="117"/>
+            <point key="canvasLocation" x="2826.0869565217395" y="116.51785714285714"/>
         </scene>
     </scenes>
     <resources>

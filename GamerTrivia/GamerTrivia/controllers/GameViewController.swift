@@ -13,6 +13,7 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
     var currentQuestion: Questions?
     var score = 0
 
+    @IBOutlet var scoreLabel: UILabel!
     @IBOutlet var label: UILabel!
     @IBOutlet var table: UITableView!
     
@@ -27,6 +28,7 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
     private func configureUI(question: Questions) {
         label.text = question.text
         currentQuestion = question
+        scoreLabel.text = "Score: " + String(score)
         table.reloadData()
     }
     
