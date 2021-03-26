@@ -6,24 +6,31 @@
 //
 
 import UIKit
+import CoreData
 
-class GameViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class GameViewController: UIViewController, UITableViewDelegate, UITableViewDataSource  {
     
-    var gameModels = [Questions]()
+    var questionset = [Questions]()
+    var answerset = [Answers]()
     var currentQuestion: Questions?
     var score = 0
+    var selectedCategory = " "
 
     @IBOutlet var scoreLabel: UILabel!
     @IBOutlet var label: UILabel!
     @IBOutlet var table: UITableView!
     
+<<<<<<< refs/remotes/origin/development
+=======
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+>>>>>>> Finished connect CoreData with three sample questions. CategoryViewController now applies filter to GameViewController. Added some fundamental scoring for answering questions ( + 10 * difficulty multiplier for correct answers and - 20 for incorrect answers).
     
     override func viewDidLoad() {
         super.viewDidLoad()
         table.delegate = self
         table.dataSource = self
-        setupQuestions()
-        configureUI(question: gameModels.first!)
+        fetchQuestions()
+        configureUI(question: (questionset.first!))
     }
     
     private func configureUI(question: Questions) {
@@ -34,46 +41,34 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     private func checkAnswer(answer: Answers, question: Questions) -> Bool {
-        return question.answers.contains(where: { $0.text == answer.text }) && answer.correct
+        return (question.answers?.allObjects.contains(where: { ($0 as AnyObject).text == answer.text }))! && answer.correct
     }
     
-    private func setupQuestions() {
-        gameModels.append(Questions(text: "What is the nickname of the red ghost in Pac-Man?", answers: [
-            Answers(text: "Stinky", correct: false),
-            Answers(text: "Pinky", correct: false),
-            Answers(text: "Blinky", correct: true),
-            Answers(text: "Inky", correct: false)
-            ], categories: [
-            Categories(text: "1980's")],
-            difficulty: 4))
-        gameModels.append(Questions(text: "What is the nickname of the pink ghost in Pac-Man?", answers: [
-            Answers(text: "Speedy", correct: false),
-            Answers(text: "Pinky", correct: true),
-            Answers(text: "Clyde", correct: false),
-            Answers(text: "Blinky", correct: false)
-            ], categories: [
-            Categories(text: "1980's")],
-            difficulty: 2))
-        gameModels.append(Questions(text: "What is the nickname of the orange ghost in Pac-Man?", answers: [
-            Answers(text: "Bashful", correct: false),
-            Answers(text: "Speedy", correct: false),
-            Answers(text: "Pokey", correct: false),
-            Answers(text: "Clyde", correct: true)
-            ], categories: [
-            Categories(text: "1980's")],
-            difficulty: 8)
-        )
+    // Fetches questions and filters them based on the categories.
+    func fetchQuestions() {
+        let filter = selectedCategory
+        let predicate = NSPredicate(format: "ANY categories.text LIKE %@", filter)
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName:"Questions")
+        request.predicate = predicate
+        do {
+            self.questionset = try context.fetch(request) as! [Questions]
+        } catch let err {
+            print("Error in fetching questions", err)
+        }
+            DispatchQueue.main.async {
+                self.table.reloadData()
+            }
     }
     
     // Table view functions
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return currentQuestion?.answers.count ?? 0
+        return currentQuestion?.answers?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = currentQuestion?.answers[indexPath.row].text
+        answerset = currentQuestion?.answers?.allObjects as! [Answers]
+        cell.textLabel?.text = answerset[indexPath.row].text
         return cell
     }
     
@@ -82,44 +77,32 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
         guard let question = currentQuestion else {
             return
         }
-        let answer = question.answers[indexPath.row]
-            
-        if checkAnswer(answer: answer, question: question) {
-            // correct -> goes to next question or winner popup
-            if let index = gameModels.firstIndex(where: { $0.text == question.text }) {
-                if index < (gameModels.count - 1) {
+        let answers = answerset[indexPath.row]
+
+        if checkAnswer(answer: answers, question: question) {
+            score = score + 10 * Int(currentQuestion?.difficulty ?? 0)
+            scoreLabel.text = "Score: " + String(score)
+            // correct --> goes to next question or winner popup
+            if let index = questionset.firstIndex(where: { $0.text == question.text }) {
+                if index < (questionset.count - 1) {
                     //next question
-                    let nextQuestion = gameModels[index + 1]
+                    let nextQuestion = questionset[index + 1]
                     currentQuestion = nil
                     configureUI(question: nextQuestion)
                 } else {
-                    let alert = UIAlertController(title: "Done", message: "You have gained 10 nerd points", preferredStyle: .alert)
+                    let alert = UIAlertController(title: "Congratulations!", message: "You have scored " + String(score) + " points", preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
                     present(alert, animated: true)
                 }
             }
         } else {
-            // wrong
-            let alert = UIAlertController(title: "Incorrect", message: "Hand in your gamer card.", preferredStyle: .alert)
+            // wrong --> deduct penalty of 20 points, update score title and popup notice of penalty
+            score = score - 20
+            scoreLabel.text = "Score: " + String(score)
+            let alert = UIAlertController(title: "Incorrect", message: "You have been penalized 20 points.", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
             present(alert, animated: true)
-            
+
         }
     }
-}
-
-struct Questions {
-    let text: String
-    let answers: [Answers]
-    let categories: [Categories]
-    let difficulty: Int
-}
-
-struct Answers {
-    let text: String
-    let correct: Bool //true /false
-}
-
-struct Categories {
-    let text: String
 }

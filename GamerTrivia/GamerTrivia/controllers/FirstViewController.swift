@@ -2,7 +2,7 @@
 //  FirstViewController.swift
 //  GamerTrivia
 //
-//  Created by Student Account  on 3/11/21.
+//  Created by Jonathan Perz on 3/22/21.
 //
 
 
@@ -23,7 +23,11 @@ class FirstViewController: UIViewController {
         present(vc, animated: true)
     }
     
+    @IBAction func dismiss (_ unwindSegue: UIStoryboardSegue) {}
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    }}
+
+    }
+    
+}

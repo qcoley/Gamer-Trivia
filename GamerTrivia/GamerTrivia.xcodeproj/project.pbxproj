@@ -17,8 +17,8 @@
 		B932AA6625FAC90C009CD43E /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B932AA6525FAC90C009CD43E /* CategoryViewController.swift */; };
 		B932AA7125FACFAB009CD43E /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B932AA7025FACFAB009CD43E /* FirstViewController.swift */; };
 		B932AA7626029D22009CD43E /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = B932AA7526029D22009CD43E /* Category.swift */; };
-		B9A82D61260D4E1300B00999 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A82D60260D4E1300B00999 /* MenuViewController.swift */; };
 		ECCA9A952603E72C00CB1EFF /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCA9A942603E72C00CB1EFF /* GameViewController.swift */; };
+		ECD3E16F26067C120020AAF5 /* GamerTrivia.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ECD3E16D26067C120020AAF5 /* GamerTrivia.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +57,7 @@
 		B932AA7526029D22009CD43E /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		B9A82D60260D4E1300B00999 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		ECCA9A942603E72C00CB1EFF /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		ECD3E16E26067C120020AAF5 /* GamerTrivia.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GamerTrivia.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +129,7 @@
 				B932AA3825FA6DF4009CD43E /* Assets.xcassets */,
 				B932AA3A25FA6DF4009CD43E /* LaunchScreen.storyboard */,
 				B932AA3D25FA6DF4009CD43E /* Info.plist */,
+				ECD3E16D26067C120020AAF5 /* GamerTrivia.xcdatamodeld */,
 			);
 			path = GamerTrivia;
 			sourceTree = "<group>";
@@ -301,6 +303,7 @@
 				B932AA2D25FA6DEF009CD43E /* AppDelegate.swift in Sources */,
 				B932AA2F25FA6DEF009CD43E /* SceneDelegate.swift in Sources */,
 				B932AA7626029D22009CD43E /* Category.swift in Sources */,
+				ECD3E16F26067C120020AAF5 /* GamerTrivia.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -633,6 +636,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		ECD3E16D26067C120020AAF5 /* GamerTrivia.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ECD3E16E26067C120020AAF5 /* GamerTrivia.xcdatamodel */,
+			);
+			currentVersion = ECD3E16E26067C120020AAF5 /* GamerTrivia.xcdatamodel */;
+			path = GamerTrivia.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B932AA2125FA6DEF009CD43E /* Project object */;
 }

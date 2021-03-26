@@ -2,19 +2,24 @@
 //  AppDelegate.swift
 //  GamerTrivia
 //
-//  Created by Student Account  on 3/11/21.
+//  Created by Jonathan Perz  on 3/22/21.
 //
 
 import UIKit
 import CoreData
 
+
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        if !UserDefaults.standard.bool(forKey: "hasRunOnce") {
+            UserDefaults.standard.setValue(true, forKey: "hasRunOnce")
+            setupSampleData()
+        }
+      
         return true
     }
 
@@ -76,6 +81,113 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
+    // NOTE: For import of JSON, we only need one of these looping through JSON file and tying JSON items to CoreData Objects.
+    private func setupSampleData() {
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+     
+        // Add first Sample Question
+        let newQuestion = NSEntityDescription.insertNewObject(forEntityName: "Questions", into: context) as! Questions
+        newQuestion.text = "What is the nickname of the red ghost in Pac-Man?"
+        newQuestion.difficulty = 4
+        newQuestion.image = nil
+
+        let answer1 = NSEntityDescription.insertNewObject(forEntityName: "Answers", into: context) as! Answers
+        answer1.text = "Stinky"
+        answer1.correct = false
+        answer1.questions = newQuestion
+        let answer2 = NSEntityDescription.insertNewObject(forEntityName: "Answers", into: context) as! Answers
+        answer2.text = "Pinky"
+        answer2.correct = false
+        answer2.questions = newQuestion
+        let answer3 = NSEntityDescription.insertNewObject(forEntityName: "Answers", into: context) as! Answers
+        answer3.text = "Blinky"
+        answer3.correct = true
+        answer3.questions = newQuestion
+        let answer4 = NSEntityDescription.insertNewObject(forEntityName: "Answers", into: context) as! Answers
+        answer4.text = "Inky"
+        answer4.correct = false
+        answer4.questions = newQuestion
+
+        newQuestion.answers = [answer1, answer2, answer3, answer4]
+        
+        // Add categories
+        let cat1 = NSEntityDescription.insertNewObject(forEntityName: "Categories", into: context) as! Categories
+        cat1.text = "1980's"
+        let cat2 = NSEntityDescription.insertNewObject(forEntityName: "Categories", into: context) as! Categories
+        cat2.text = "Arcade"
+        
+        cat1.addToQuestions(newQuestion)
+
+        
+        newQuestion.addToCategories(cat1)
+
+        
+        // Add second Sample Question
+        let newQuestion2 = NSEntityDescription.insertNewObject(forEntityName: "Questions", into: context) as! Questions
+        newQuestion2.text = "What is the nickname of the pink ghost in Pac-Man?"
+        newQuestion2.difficulty = 1
+        newQuestion2.image = nil
+
+        let answer5 = NSEntityDescription.insertNewObject(forEntityName: "Answers", into: context) as! Answers
+        answer5.text = "Speedy"
+        answer5.correct = false
+        answer5.questions = newQuestion2
+        let answer6 = NSEntityDescription.insertNewObject(forEntityName: "Answers", into: context) as! Answers
+        answer6.text = "Pinky"
+        answer6.correct = true
+        answer6.questions = newQuestion2
+        let answer7 = NSEntityDescription.insertNewObject(forEntityName: "Answers", into: context) as! Answers
+        answer7.text = "Clyde"
+        answer7.correct = false
+        answer7.questions = newQuestion2
+        let answer8 = NSEntityDescription.insertNewObject(forEntityName: "Answers", into: context) as! Answers
+        answer8.text = "Blinky"
+        answer8.correct = false
+        answer8.questions = newQuestion2
+
+        newQuestion2.answers = [answer5, answer6, answer7, answer8]
+        
+        cat1.addToQuestions(newQuestion2)
+        cat2.addToQuestions(newQuestion2)
+        
+        newQuestion2.addToCategories(cat1)
+        newQuestion2.addToCategories(cat2)
+
+        // Add third Sample Question
+        let newQuestion3 = NSEntityDescription.insertNewObject(forEntityName: "Questions", into: context) as! Questions
+        newQuestion3.text = "What is the character of the orange ghost in Pac-Man?"
+        newQuestion3.difficulty = 8
+        newQuestion3.image = nil
+
+        let answer9 = NSEntityDescription.insertNewObject(forEntityName: "Answers", into: context) as! Answers
+        answer9.text = "Bashful"
+        answer9.correct = false
+        answer9.questions = newQuestion3
+        let answer10 = NSEntityDescription.insertNewObject(forEntityName: "Answers", into: context) as! Answers
+        answer10.text = "Speedy"
+        answer10.correct = true
+        answer10.questions = newQuestion3
+        let answer11 = NSEntityDescription.insertNewObject(forEntityName: "Answers", into: context) as! Answers
+        answer11.text = "Pokey"
+        answer11.correct = true
+        answer11.questions = newQuestion3
+        let answer12 = NSEntityDescription.insertNewObject(forEntityName: "Answers", into: context) as! Answers
+        answer12.text = "Clyde"
+        answer12.correct = false
+        answer12.questions = newQuestion3
+
+        newQuestion3.answers = [answer9, answer10, answer11, answer12]
+        
+        cat1.addToQuestions(newQuestion3)
+        cat2.addToQuestions(newQuestion3)
+        
+        newQuestion3.addToCategories(cat1)
+        newQuestion3.addToCategories(cat2)
+        
+        saveContext()
+    }
+    
+    
 
 }
 
