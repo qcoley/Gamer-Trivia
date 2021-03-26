@@ -17,6 +17,7 @@
 		B932AA6625FAC90C009CD43E /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B932AA6525FAC90C009CD43E /* CategoryViewController.swift */; };
 		B932AA7125FACFAB009CD43E /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B932AA7025FACFAB009CD43E /* FirstViewController.swift */; };
 		B932AA7626029D22009CD43E /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = B932AA7526029D22009CD43E /* Category.swift */; };
+		B9A82D61260D4E1300B00999 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A82D60260D4E1300B00999 /* MenuViewController.swift */; };
 		ECCA9A952603E72C00CB1EFF /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCA9A942603E72C00CB1EFF /* GameViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		B932AA6525FAC90C009CD43E /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		B932AA7025FACFAB009CD43E /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		B932AA7526029D22009CD43E /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		B9A82D60260D4E1300B00999 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		ECCA9A942603E72C00CB1EFF /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +90,7 @@
 				B932AA7025FACFAB009CD43E /* FirstViewController.swift */,
 				B932AA6525FAC90C009CD43E /* CategoryViewController.swift */,
 				ECCA9A942603E72C00CB1EFF /* GameViewController.swift */,
+				B9A82D60260D4E1300B00999 /* MenuViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 				ECCA9A952603E72C00CB1EFF /* GameViewController.swift in Sources */,
 				B932AA7125FACFAB009CD43E /* FirstViewController.swift in Sources */,
 				B932AA6625FAC90C009CD43E /* CategoryViewController.swift in Sources */,
+				B9A82D61260D4E1300B00999 /* MenuViewController.swift in Sources */,
 				B932AA2D25FA6DEF009CD43E /* AppDelegate.swift in Sources */,
 				B932AA2F25FA6DEF009CD43E /* SceneDelegate.swift in Sources */,
 				B932AA7626029D22009CD43E /* Category.swift in Sources */,

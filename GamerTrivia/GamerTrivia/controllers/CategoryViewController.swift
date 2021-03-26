@@ -61,7 +61,7 @@ class CategoryViewController: UIViewController, UITableViewDelegate, UITableView
         var tempCategories: [Category] = []
         
         let category1 = Category(category: "MMO")
-        let category2 = Category(category: "Console")
+        let category2 = Category(category: "Arcade")
         let category3 = Category(category: "1980's")
         let category4 = Category(category: "1990's")
         let category5 = Category(category: "2000's")

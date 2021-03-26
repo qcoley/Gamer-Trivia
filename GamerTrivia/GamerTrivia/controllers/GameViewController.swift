@@ -17,6 +17,7 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet var label: UILabel!
     @IBOutlet var table: UITableView!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         table.delegate = self
