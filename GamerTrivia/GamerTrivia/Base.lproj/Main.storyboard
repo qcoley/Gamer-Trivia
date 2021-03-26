@@ -29,9 +29,6 @@
                                 <state key="normal" title="Return" backgroundImage="player_button">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="Hoi-64-jrJ" kind="show" id="Q3g-ks-cGP"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="00c-Jx-PeV" userLabel="Exit Button">
                                 <rect key="frame" x="65" y="527" width="285" height="69"/>
@@ -40,9 +37,6 @@
                                 <state key="normal" title="Exit" backgroundImage="player_button">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="kIg-2C-Rz4"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uNs-e0-b3l"/>
@@ -143,11 +137,11 @@
             <objects>
                 <viewController storyboardIdentifier="initial" id="BYZ-38-t0r" customClass="FirstViewController" customModule="GamerTrivia" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VTX-k7-ceQ" userLabel="FirstButton">
-                                <rect key="frame" x="64.5" y="386.5" width="285" height="69"/>
+                                <rect key="frame" x="64.5" y="413.5" width="285" height="69"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="28"/>
                                 <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="One Player" backgroundImage="player_button">
@@ -158,7 +152,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6sx-FR-JK4" userLabel="SecondButton">
-                                <rect key="frame" x="64.5" y="505.5" width="285" height="69"/>
+                                <rect key="frame" x="64.5" y="532.5" width="285" height="69"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="28"/>
                                 <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="Two Player" backgroundImage="player_button">
@@ -169,7 +163,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="qkx-bV-fVZ">
-                                <rect key="frame" x="51" y="146" width="313" height="177"/>
+                                <rect key="frame" x="51" y="190" width="313" height="160"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -199,15 +193,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RTq-Qz-98w" userLabel="Question Label">
-                                <rect key="frame" x="10" y="52" width="394" height="218"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="218" id="8zF-gX-V8Q"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pou-af-V0n" userLabel="Score Label">
                                 <rect key="frame" x="20" y="20" width="374" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -228,29 +213,35 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YBc-bJ-sHe">
-                                <rect key="frame" x="20" y="20" width="85" height="41"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="28"/>
-                                <state key="normal" title="Pause">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Difficulty Multiplier" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UuW-Dd-QvX">
+                                <rect key="frame" x="40" y="254.5" width="334" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Question" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RTq-Qz-98w" userLabel="Question Label">
+                                <rect key="frame" x="10" y="36" width="394" height="218"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="218" id="8zF-gX-V8Q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fiX-JP-lpJ"/>
                         <color key="backgroundColor" systemColor="systemRedColor"/>
                         <constraints>
                             <constraint firstItem="Pou-af-V0n" firstAttribute="leading" secondItem="fiX-JP-lpJ" secondAttribute="leading" constant="20" id="410-R4-ejj"/>
+                            <constraint firstItem="UuW-Dd-QvX" firstAttribute="leading" secondItem="fiX-JP-lpJ" secondAttribute="leading" constant="40" id="EdS-jz-iSI"/>
                             <constraint firstItem="fiX-JP-lpJ" firstAttribute="trailing" secondItem="RTq-Qz-98w" secondAttribute="trailing" constant="10" id="JwV-Zy-uR6"/>
-                            <constraint firstItem="lmL-ty-r5w" firstAttribute="top" secondItem="YBc-bJ-sHe" secondAttribute="bottom" constant="219.5" id="KXX-W7-XnG"/>
                             <constraint firstItem="Pou-af-V0n" firstAttribute="top" secondItem="fiX-JP-lpJ" secondAttribute="top" constant="20" id="RZJ-JV-Q59"/>
+                            <constraint firstItem="fiX-JP-lpJ" firstAttribute="trailing" secondItem="UuW-Dd-QvX" secondAttribute="trailing" constant="40" id="Vus-dH-hit"/>
                             <constraint firstItem="lmL-ty-r5w" firstAttribute="firstBaseline" secondItem="RTq-Qz-98w" secondAttribute="baseline" constant="17" symbolType="layoutAnchor" id="awE-VK-zMF"/>
                             <constraint firstItem="fiX-JP-lpJ" firstAttribute="bottom" secondItem="lmL-ty-r5w" secondAttribute="bottom" id="dhs-6d-onv"/>
-                            <constraint firstItem="YBc-bJ-sHe" firstAttribute="top" secondItem="fiX-JP-lpJ" secondAttribute="top" constant="20" id="f3Y-F7-fXk"/>
-                            <constraint firstItem="fiX-JP-lpJ" firstAttribute="trailing" secondItem="YBc-bJ-sHe" secondAttribute="trailing" constant="309" id="fW1-cv-ehz"/>
                             <constraint firstItem="fiX-JP-lpJ" firstAttribute="trailing" secondItem="Pou-af-V0n" secondAttribute="trailing" constant="20" id="gtT-DC-7hd"/>
-                            <constraint firstItem="YBc-bJ-sHe" firstAttribute="leading" secondItem="fiX-JP-lpJ" secondAttribute="leading" constant="20" id="i0i-jC-vXo"/>
                             <constraint firstItem="lmL-ty-r5w" firstAttribute="leading" secondItem="fiX-JP-lpJ" secondAttribute="leading" id="lTa-F0-nr7"/>
+                            <constraint firstItem="lmL-ty-r5w" firstAttribute="top" secondItem="UuW-Dd-QvX" secondAttribute="bottom" constant="5" id="o8s-wm-Eff"/>
                             <constraint firstItem="fiX-JP-lpJ" firstAttribute="trailing" secondItem="lmL-ty-r5w" secondAttribute="trailing" id="tFb-wS-chk"/>
                             <constraint firstItem="RTq-Qz-98w" firstAttribute="top" secondItem="Pou-af-V0n" secondAttribute="top" constant="32" id="xau-Ot-pCl"/>
                             <constraint firstItem="RTq-Qz-98w" firstAttribute="leading" secondItem="fiX-JP-lpJ" secondAttribute="leading" constant="10" id="yjZ-wR-7ab"/>
@@ -258,6 +249,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="k6g-sy-L0n"/>
                     <connections>
+                        <outlet property="difficultyMultiplier" destination="UuW-Dd-QvX" id="IiD-P5-ZIb"/>
                         <outlet property="label" destination="RTq-Qz-98w" id="kpy-2v-snV"/>
                         <outlet property="scoreLabel" destination="Pou-af-V0n" id="jgy-Tz-Jag"/>
                         <outlet property="table" destination="lmL-ty-r5w" id="wJT-vt-JBg"/>
@@ -268,9 +260,6 @@
             <point key="canvasLocation" x="2826.0869565217395" y="116.51785714285714"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="Q3g-ks-cGP"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="logo" width="1908" height="1080"/>
         <image name="player_button" width="285" height="69"/>

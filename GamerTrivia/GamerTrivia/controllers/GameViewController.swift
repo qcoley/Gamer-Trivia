@@ -19,6 +19,7 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet var scoreLabel: UILabel!
     @IBOutlet var label: UILabel!
     @IBOutlet var table: UITableView!
+    @IBOutlet var difficultyMultiplier: UILabel!
     
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
@@ -27,11 +28,14 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
         table.delegate = self
         table.dataSource = self
         fetchQuestions()
-        configureUI(question: (questionset.first!))
+        let uniqueQuestions = Array(Set(questionset)).prefix(10)
+        configureUI(question: (uniqueQuestions.first!))
     }
     
     private func configureUI(question: Questions) {
         label.text = question.text
+        difficultyMultiplier.text = "Difficulty Multiplier: " +
+        String(question.difficulty)
         currentQuestion = question
         scoreLabel.text = "Score: " + String(score)
         table.reloadData()
