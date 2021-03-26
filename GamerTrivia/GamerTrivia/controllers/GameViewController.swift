@@ -20,10 +20,7 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet var label: UILabel!
     @IBOutlet var table: UITableView!
     
-<<<<<<< refs/remotes/origin/development
-=======
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
->>>>>>> Finished connect CoreData with three sample questions. CategoryViewController now applies filter to GameViewController. Added some fundamental scoring for answering questions ( + 10 * difficulty multiplier for correct answers and - 20 for incorrect answers).
     
     override func viewDidLoad() {
         super.viewDidLoad()

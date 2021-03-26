@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,19 +11,19 @@
         <!--Menu View Controller-->
         <scene sceneID="X4Y-cb-kRK">
             <objects>
-                <viewController storyboardIdentifier="menu" id="WHA-Fu-tVS" customClass="MenuViewController" customModule="GamerTrivia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="menu" id="WHA-Fu-tVS" customClass="MenuViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NUQ-1t-1tX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Paused" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WkA-OV-PMI">
-                                <rect key="frame" x="97" y="228" width="221" height="41"/>
+                                <rect key="frame" x="97" y="272" width="221" height="41"/>
                                 <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bKn-bA-sA8" userLabel="Return Button">
-                                <rect key="frame" x="64" y="369" width="285" height="59"/>
+                                <rect key="frame" x="64" y="413" width="285" height="69"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="28"/>
                                 <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="Return" backgroundImage="player_button">
@@ -34,7 +34,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="00c-Jx-PeV" userLabel="Exit Button">
-                                <rect key="frame" x="65" y="473" width="285" height="69"/>
+                                <rect key="frame" x="65" y="527" width="285" height="69"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="28"/>
                                 <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="Exit" backgroundImage="player_button">
@@ -131,6 +131,7 @@
                     <connections>
                         <outlet property="Label" destination="fta-Ce-oLN" id="aq3-8n-qcR"/>
                         <outlet property="Table" destination="RRe-vT-SQD" id="s9o-6D-9yO"/>
+                        <segue destination="Hoi-64-jrJ" kind="showDetail" identifier="StartGame" id="P0W-zC-O8T"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zRx-KD-tlW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -234,9 +235,6 @@
                                 <state key="normal" title="Pause">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="WHA-Fu-tVS" kind="show" id="XRT-u1-U2X"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fiX-JP-lpJ"/>
