@@ -7,41 +7,54 @@
 
 import UIKit
 import CoreData
+import AVFoundation
 
 class GameViewController: UIViewController, UITableViewDelegate, UITableViewDataSource  {
     
     var questionset = [Questions]()
+    var chosenQuestionArray = [Questions]()
     var answerset = [Answers]()
     var currentQuestion: Questions?
+    var currentQuestionCounter = 1
     var score = 0
     var selectedCategory = " "
+    var audioPlayer: AVAudioPlayer?
 
     @IBOutlet var scoreLabel: UILabel!
     @IBOutlet var label: UILabel!
     @IBOutlet var table: UITableView!
     @IBOutlet var difficultyMultiplier: UILabel!
-    
-    
+    @IBOutlet var questionCounter: UILabel!
+        
     let context = PersistenceService.shared.persistentContainer.viewContext
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         table.delegate = self
         table.dataSource = self
         fetchQuestions()
-        let uniqueQuestions = Array(Set(questionset)).prefix(10)
-        configureUI(question: (uniqueQuestions.first!))
+        chosenQuestionArray = Array(Set(questionset)).shuffled().suffix(10)
+        configureUI(question: (chosenQuestionArray.first!))
     }
     
     private func configureUI(question: Questions) {
         label.text = question.text
-        difficultyMultiplier.text = "Difficulty Multiplier: " +
-        String(question.difficulty)
+        difficultyMultiplier.text = "Difficulty Multiplier: " +   String(question.difficulty)
+        questionCounter?.text = String(currentQuestionCounter) + " of " + String(chosenQuestionArray.count)
         currentQuestion = question
         scoreLabel.text = "Score: " + String(score)
         table.reloadData()
+    }
+    
+    private func playSound (soundToPlay: String) {
+        let pathToSound = Bundle.main.path(forResource: soundToPlay, ofType: "wav")!
+        let url = URL(fileURLWithPath: pathToSound)
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: url)
+            audioPlayer?.play()
+        } catch let err {
+            print("Could not find sound filel", err)
+        }
     }
     
     private func checkAnswer(answer: Answers, question: Questions) -> Bool {
@@ -84,13 +97,19 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
         let answers = answerset[indexPath.row]
 
         if checkAnswer(answer: answers, question: question) {
-            score = score + 10 * Int(currentQuestion?.difficulty ?? 0)
+            let earnedScore = 10 * Int(currentQuestion?.difficulty ?? 0)
+            score = score + earnedScore
             scoreLabel.text = "Score: " + String(score)
+            playSound(soundToPlay: "pacman_extrapac")
+            let alert = UIAlertController(title: "Correct!", message: "You have been earned " + String(earnedScore) + " points.", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
+            present(alert, animated: true)
             // correct --> goes to next question or winner popup
-            if let index = questionset.firstIndex(where: { $0.text == question.text }) {
-                if index < (questionset.count - 1) {
+            if let index = chosenQuestionArray.firstIndex(where: { $0.text == question.text }) {
+                if index < (chosenQuestionArray.count - 1) {
                     //next question
-                    let nextQuestion = questionset[index + 1]
+                    currentQuestionCounter = currentQuestionCounter + 1
+                    let nextQuestion = chosenQuestionArray[index + 1]
                     currentQuestion = nil
                     configureUI(question: nextQuestion)
                 } else {
@@ -103,6 +122,7 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
             // wrong --> deduct penalty of 20 points, update score title and popup notice of penalty
             score = score - 20
             scoreLabel.text = "Score: " + String(score)
+            playSound(soundToPlay: "pacman_death")
             let alert = UIAlertController(title: "Incorrect", message: "You have been penalized 20 points.", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
             present(alert, animated: true)

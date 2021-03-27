@@ -25,6 +25,13 @@
 		B932AA6625FAC90C009CD43E /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B932AA6525FAC90C009CD43E /* CategoryViewController.swift */; };
 		B932AA7125FACFAB009CD43E /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B932AA7025FACFAB009CD43E /* FirstViewController.swift */; };
 		B932AA7626029D22009CD43E /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = B932AA7526029D22009CD43E /* Category.swift */; };
+		EC105545260F1E2200050F35 /* pacman_eatghost.wav in Resources */ = {isa = PBXBuildFile; fileRef = EC10553E260F1E2200050F35 /* pacman_eatghost.wav */; };
+		EC105546260F1E2200050F35 /* pacman_chomp.wav in Resources */ = {isa = PBXBuildFile; fileRef = EC10553F260F1E2200050F35 /* pacman_chomp.wav */; };
+		EC105547260F1E2200050F35 /* pacman_death.wav in Resources */ = {isa = PBXBuildFile; fileRef = EC105540260F1E2200050F35 /* pacman_death.wav */; };
+		EC105548260F1E2200050F35 /* pacman_eatfruit.wav in Resources */ = {isa = PBXBuildFile; fileRef = EC105541260F1E2200050F35 /* pacman_eatfruit.wav */; };
+		EC105549260F1E2200050F35 /* pacman_beginning.wav in Resources */ = {isa = PBXBuildFile; fileRef = EC105542260F1E2200050F35 /* pacman_beginning.wav */; };
+		EC10554A260F1E2200050F35 /* pacman_extrapac.wav in Resources */ = {isa = PBXBuildFile; fileRef = EC105543260F1E2200050F35 /* pacman_extrapac.wav */; };
+		EC10554B260F1E2200050F35 /* pacman_intermission.wav in Resources */ = {isa = PBXBuildFile; fileRef = EC105544260F1E2200050F35 /* pacman_intermission.wav */; };
 		ECCA9A952603E72C00CB1EFF /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCA9A942603E72C00CB1EFF /* GameViewController.swift */; };
 		ECD3E16F26067C120020AAF5 /* GamerTrivia.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ECD3E16D26067C120020AAF5 /* GamerTrivia.xcdatamodeld */; };
 /* End PBXBuildFile section */
@@ -72,6 +79,13 @@
 		B932AA7025FACFAB009CD43E /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		B932AA7526029D22009CD43E /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		B9A82D60260D4E1300B00999 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		EC10553E260F1E2200050F35 /* pacman_eatghost.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pacman_eatghost.wav; sourceTree = "<group>"; };
+		EC10553F260F1E2200050F35 /* pacman_chomp.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pacman_chomp.wav; sourceTree = "<group>"; };
+		EC105540260F1E2200050F35 /* pacman_death.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pacman_death.wav; sourceTree = "<group>"; };
+		EC105541260F1E2200050F35 /* pacman_eatfruit.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pacman_eatfruit.wav; sourceTree = "<group>"; };
+		EC105542260F1E2200050F35 /* pacman_beginning.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pacman_beginning.wav; sourceTree = "<group>"; };
+		EC105543260F1E2200050F35 /* pacman_extrapac.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pacman_extrapac.wav; sourceTree = "<group>"; };
+		EC105544260F1E2200050F35 /* pacman_intermission.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pacman_intermission.wav; sourceTree = "<group>"; };
 		ECCA9A942603E72C00CB1EFF /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		ECD3E16E26067C120020AAF5 /* GamerTrivia.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GamerTrivia.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -135,6 +149,7 @@
 		B932AA2B25FA6DEF009CD43E /* GamerTrivia */ = {
 			isa = PBXGroup;
 			children = (
+				EC10553D260F1E0A00050F35 /* Sounds */,
 				ECCA9A842603DEE400CB1EFF /* model */,
 				ECCA9A882603DEFB00CB1EFF /* view */,
 				A561922E2602C8320062272A /* controllers */,
@@ -167,6 +182,20 @@
 				B932AA5325FA6DF4009CD43E /* Info.plist */,
 			);
 			path = GamerTriviaUITests;
+			sourceTree = "<group>";
+		};
+		EC10553D260F1E0A00050F35 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				EC105542260F1E2200050F35 /* pacman_beginning.wav */,
+				EC10553F260F1E2200050F35 /* pacman_chomp.wav */,
+				EC105540260F1E2200050F35 /* pacman_death.wav */,
+				EC105541260F1E2200050F35 /* pacman_eatfruit.wav */,
+				EC10553E260F1E2200050F35 /* pacman_eatghost.wav */,
+				EC105543260F1E2200050F35 /* pacman_extrapac.wav */,
+				EC105544260F1E2200050F35 /* pacman_intermission.wav */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 		ECCA9A842603DEE400CB1EFF /* model */ = {
@@ -293,9 +322,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC105547260F1E2200050F35 /* pacman_death.wav in Resources */,
 				B932AA3C25FA6DF4009CD43E /* LaunchScreen.storyboard in Resources */,
+				EC10554A260F1E2200050F35 /* pacman_extrapac.wav in Resources */,
+				EC10554B260F1E2200050F35 /* pacman_intermission.wav in Resources */,
+				EC105548260F1E2200050F35 /* pacman_eatfruit.wav in Resources */,
 				B932AA3925FA6DF4009CD43E /* Assets.xcassets in Resources */,
+				EC105546260F1E2200050F35 /* pacman_chomp.wav in Resources */,
+				EC105549260F1E2200050F35 /* pacman_beginning.wav in Resources */,
 				A5C8F6E5260F0918001A4D13 /* GamerTrivia.json in Resources */,
+				EC105545260F1E2200050F35 /* pacman_eatghost.wav in Resources */,
 				B932AA3425FA6DEF009CD43E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
