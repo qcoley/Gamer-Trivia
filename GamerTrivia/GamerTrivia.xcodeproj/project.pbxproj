@@ -13,8 +13,8 @@
 		A5C8F6BA260EB0BD001A4D13 /* Answers+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C8F6B4260EB0BD001A4D13 /* Answers+CoreDataProperties.swift */; };
 		A5C8F6BB260EB0BD001A4D13 /* Categories+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C8F6B5260EB0BD001A4D13 /* Categories+CoreDataClass.swift */; };
 		A5C8F6BC260EB0BD001A4D13 /* Categories+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C8F6B6260EB0BD001A4D13 /* Categories+CoreDataProperties.swift */; };
-		A5C8F6C4260EB214001A4D13 /* GamerTrivia.json in Resources */ = {isa = PBXBuildFile; fileRef = A5C8F6C3260EB214001A4D13 /* GamerTrivia.json */; };
 		A5C8F6D3260EB570001A4D13 /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C8F6C8260EB23D001A4D13 /* PersistenceService.swift */; };
+		A5C8F6E5260F0918001A4D13 /* GamerTrivia.json in Resources */ = {isa = PBXBuildFile; fileRef = A5C8F6E4260F0918001A4D13 /* GamerTrivia.json */; };
 		B932AA2D25FA6DEF009CD43E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B932AA2C25FA6DEF009CD43E /* AppDelegate.swift */; };
 		B932AA2F25FA6DEF009CD43E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B932AA2E25FA6DEF009CD43E /* SceneDelegate.swift */; };
 		B932AA3425FA6DEF009CD43E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B932AA3225FA6DEF009CD43E /* Main.storyboard */; };
@@ -53,8 +53,8 @@
 		A5C8F6B4260EB0BD001A4D13 /* Answers+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Answers+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		A5C8F6B5260EB0BD001A4D13 /* Categories+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Categories+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 		A5C8F6B6260EB0BD001A4D13 /* Categories+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Categories+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
-		A5C8F6C3260EB214001A4D13 /* GamerTrivia.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = GamerTrivia.json; path = ../../../../Downloads/GamerTrivia.json; sourceTree = "<group>"; };
 		A5C8F6C8260EB23D001A4D13 /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
+		A5C8F6E4260F0918001A4D13 /* GamerTrivia.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GamerTrivia.json; sourceTree = "<group>"; };
 		B932AA2925FA6DEF009CD43E /* GamerTrivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GamerTrivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B932AA2C25FA6DEF009CD43E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B932AA2E25FA6DEF009CD43E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -178,7 +178,7 @@
 				A5C8F6B4260EB0BD001A4D13 /* Answers+CoreDataProperties.swift */,
 				A5C8F6B5260EB0BD001A4D13 /* Categories+CoreDataClass.swift */,
 				A5C8F6B6260EB0BD001A4D13 /* Categories+CoreDataProperties.swift */,
-				A5C8F6C3260EB214001A4D13 /* GamerTrivia.json */,
+				A5C8F6E4260F0918001A4D13 /* GamerTrivia.json */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -295,8 +295,8 @@
 			files = (
 				B932AA3C25FA6DF4009CD43E /* LaunchScreen.storyboard in Resources */,
 				B932AA3925FA6DF4009CD43E /* Assets.xcassets in Resources */,
+				A5C8F6E5260F0918001A4D13 /* GamerTrivia.json in Resources */,
 				B932AA3425FA6DEF009CD43E /* Main.storyboard in Resources */,
-				A5C8F6C4260EB214001A4D13 /* GamerTrivia.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
