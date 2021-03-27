@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A5C8F6B7260EB0BD001A4D13 /* Questions+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C8F6B1260EB0BD001A4D13 /* Questions+CoreDataClass.swift */; };
+		A5C8F6B8260EB0BD001A4D13 /* Questions+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C8F6B2260EB0BD001A4D13 /* Questions+CoreDataProperties.swift */; };
+		A5C8F6B9260EB0BD001A4D13 /* Answers+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C8F6B3260EB0BD001A4D13 /* Answers+CoreDataClass.swift */; };
+		A5C8F6BA260EB0BD001A4D13 /* Answers+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C8F6B4260EB0BD001A4D13 /* Answers+CoreDataProperties.swift */; };
+		A5C8F6BB260EB0BD001A4D13 /* Categories+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C8F6B5260EB0BD001A4D13 /* Categories+CoreDataClass.swift */; };
+		A5C8F6BC260EB0BD001A4D13 /* Categories+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C8F6B6260EB0BD001A4D13 /* Categories+CoreDataProperties.swift */; };
+		A5C8F6C4260EB214001A4D13 /* GamerTrivia.json in Resources */ = {isa = PBXBuildFile; fileRef = A5C8F6C3260EB214001A4D13 /* GamerTrivia.json */; };
+		A5C8F6D3260EB570001A4D13 /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C8F6C8260EB23D001A4D13 /* PersistenceService.swift */; };
 		B932AA2D25FA6DEF009CD43E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B932AA2C25FA6DEF009CD43E /* AppDelegate.swift */; };
 		B932AA2F25FA6DEF009CD43E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B932AA2E25FA6DEF009CD43E /* SceneDelegate.swift */; };
 		B932AA3425FA6DEF009CD43E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B932AA3225FA6DEF009CD43E /* Main.storyboard */; };
@@ -39,6 +47,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A5C8F6B1260EB0BD001A4D13 /* Questions+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Questions+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		A5C8F6B2260EB0BD001A4D13 /* Questions+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Questions+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		A5C8F6B3260EB0BD001A4D13 /* Answers+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Answers+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		A5C8F6B4260EB0BD001A4D13 /* Answers+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Answers+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		A5C8F6B5260EB0BD001A4D13 /* Categories+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Categories+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		A5C8F6B6260EB0BD001A4D13 /* Categories+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Categories+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		A5C8F6C3260EB214001A4D13 /* GamerTrivia.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = GamerTrivia.json; path = ../../../../Downloads/GamerTrivia.json; sourceTree = "<group>"; };
+		A5C8F6C8260EB23D001A4D13 /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
 		B932AA2925FA6DEF009CD43E /* GamerTrivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GamerTrivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B932AA2C25FA6DEF009CD43E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B932AA2E25FA6DEF009CD43E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -119,9 +135,10 @@
 		B932AA2B25FA6DEF009CD43E /* GamerTrivia */ = {
 			isa = PBXGroup;
 			children = (
-				ECCA9A882603DEFB00CB1EFF /* view */,
 				ECCA9A842603DEE400CB1EFF /* model */,
+				ECCA9A882603DEFB00CB1EFF /* view */,
 				A561922E2602C8320062272A /* controllers */,
+				A5C8F6C8260EB23D001A4D13 /* PersistenceService.swift */,
 				B932AA2C25FA6DEF009CD43E /* AppDelegate.swift */,
 				B932AA2E25FA6DEF009CD43E /* SceneDelegate.swift */,
 				B932AA3225FA6DEF009CD43E /* Main.storyboard */,
@@ -155,6 +172,13 @@
 		ECCA9A842603DEE400CB1EFF /* model */ = {
 			isa = PBXGroup;
 			children = (
+				A5C8F6B1260EB0BD001A4D13 /* Questions+CoreDataClass.swift */,
+				A5C8F6B2260EB0BD001A4D13 /* Questions+CoreDataProperties.swift */,
+				A5C8F6B3260EB0BD001A4D13 /* Answers+CoreDataClass.swift */,
+				A5C8F6B4260EB0BD001A4D13 /* Answers+CoreDataProperties.swift */,
+				A5C8F6B5260EB0BD001A4D13 /* Categories+CoreDataClass.swift */,
+				A5C8F6B6260EB0BD001A4D13 /* Categories+CoreDataProperties.swift */,
+				A5C8F6C3260EB214001A4D13 /* GamerTrivia.json */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -272,6 +296,7 @@
 				B932AA3C25FA6DF4009CD43E /* LaunchScreen.storyboard in Resources */,
 				B932AA3925FA6DF4009CD43E /* Assets.xcassets in Resources */,
 				B932AA3425FA6DEF009CD43E /* Main.storyboard in Resources */,
+				A5C8F6C4260EB214001A4D13 /* GamerTrivia.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,13 +322,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECCA9A952603E72C00CB1EFF /* GameViewController.swift in Sources */,
+				A5C8F6BA260EB0BD001A4D13 /* Answers+CoreDataProperties.swift in Sources */,
+				A5C8F6BC260EB0BD001A4D13 /* Categories+CoreDataProperties.swift in Sources */,
 				B932AA7125FACFAB009CD43E /* FirstViewController.swift in Sources */,
+				A5C8F6BB260EB0BD001A4D13 /* Categories+CoreDataClass.swift in Sources */,
 				B932AA6625FAC90C009CD43E /* CategoryViewController.swift in Sources */,
-				B9A82D61260D4E1300B00999 /* MenuViewController.swift in Sources */,
+				A5C8F6B9260EB0BD001A4D13 /* Answers+CoreDataClass.swift in Sources */,
+				A5C8F6D3260EB570001A4D13 /* PersistenceService.swift in Sources */,
 				B932AA2D25FA6DEF009CD43E /* AppDelegate.swift in Sources */,
 				B932AA2F25FA6DEF009CD43E /* SceneDelegate.swift in Sources */,
 				B932AA7626029D22009CD43E /* Category.swift in Sources */,
 				ECD3E16F26067C120020AAF5 /* GamerTrivia.xcdatamodeld in Sources */,
+				A5C8F6B8260EB0BD001A4D13 /* Questions+CoreDataProperties.swift in Sources */,
+				A5C8F6B7260EB0BD001A4D13 /* Questions+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

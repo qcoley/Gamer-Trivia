@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20D91" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Answers" representedClassName="Answers" syncable="YES" codeGenerationType="class">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20C69" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Answers" representedClassName="Answers" syncable="YES">
         <attribute name="correct" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="text" optional="YES" attributeType="String"/>
         <relationship name="questions" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Questions" inverseName="answers" inverseEntity="Questions"/>
     </entity>
-    <entity name="Categories" representedClassName="Categories" syncable="YES" codeGenerationType="class">
+    <entity name="Categories" representedClassName="Categories" syncable="YES">
         <attribute name="text" optional="YES" attributeType="String"/>
         <relationship name="questions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Questions" inverseName="categories" inverseEntity="Questions"/>
     </entity>
-    <entity name="Questions" representedClassName="Questions" syncable="YES" codeGenerationType="class">
+    <entity name="Questions" representedClassName="Questions" syncable="YES">
         <attribute name="difficulty" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="image" optional="YES" attributeType="Binary"/>
         <attribute name="text" attributeType="String"/>

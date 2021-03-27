@@ -13,7 +13,7 @@ class CategoryViewController: UIViewController, UITableViewDelegate, UITableView
     @IBOutlet weak var Label: UILabel!
     @IBOutlet weak var Table: UITableView!
     
-    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    let persistence = PersistenceService.shared
     
     var cats:[Categories]?  //
     var selectedIndex: Int = 0
@@ -23,18 +23,11 @@ class CategoryViewController: UIViewController, UITableViewDelegate, UITableView
         super.viewDidLoad()
         Table.delegate = self
         Table.dataSource = self
-        fetchCategories()
-    }
-    
-    // Grabs the current categories as loaded in CoreData for display in Table view
-    func fetchCategories() {
-        do {
-            self.cats = try context.fetch(Categories.fetchRequest())
-                DispatchQueue.main.async {
-                self.Table.reloadData()
-            }
-        } catch let err {
-            print("Failed to fetch categories", err)
+        
+        // Grabs the current categories as loaded in CoreData for display in Table view
+        persistence.fetch(Categories.self) { [weak self] (categories) in
+            self?.cats = categories
+            self?.Table.reloadData()
         }
     }
     

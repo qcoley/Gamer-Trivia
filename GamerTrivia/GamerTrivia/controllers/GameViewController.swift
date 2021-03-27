@@ -21,10 +21,13 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet var table: UITableView!
     @IBOutlet var difficultyMultiplier: UILabel!
     
-    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
+    let context = PersistenceService.shared.persistentContainer.viewContext
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         table.delegate = self
         table.dataSource = self
         fetchQuestions()
@@ -56,9 +59,9 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
         } catch let err {
             print("Error in fetching questions", err)
         }
-            DispatchQueue.main.async {
-                self.table.reloadData()
-            }
+        DispatchQueue.main.async {
+            self.table.reloadData()
+        }
     }
     
     // Table view functions
