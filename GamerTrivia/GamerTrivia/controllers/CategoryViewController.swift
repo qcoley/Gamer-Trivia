@@ -23,6 +23,7 @@ class CategoryViewController: UIViewController, UITableViewDelegate, UITableView
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.addBackground(imageName: "GeneralBackground")
         Table.delegate = self
         Table.dataSource = self
         // Grabs the current categories as loaded in CoreData for display in Table view
@@ -30,7 +31,7 @@ class CategoryViewController: UIViewController, UITableViewDelegate, UITableView
             self?.cats = categories
             self?.Table.reloadData()
         }
-        playSound(soundToPlay: "pacman_chomp")
+//        playSound(soundToPlay: "pacman_chomp")
     }
     
     private func playSound (soundToPlay: String) {
@@ -54,6 +55,23 @@ class CategoryViewController: UIViewController, UITableViewDelegate, UITableView
         let category = self.cats?[indexPath.row]
         let categoryQuestionCount = category?.questions?.count ?? 0
         cell.textLabel?.text = (category?.text)! + " (" + String(categoryQuestionCount) + ")"
+        cell.textLabel?.textColor = UIColor.white
+        cell.textLabel?.textAlignment = NSTextAlignment.center
+        
+        guard let customFont = UIFont(name: "Arcade", size: UIFont.labelFontSize) else {
+            fatalError("""
+                Failed to load the "CustomFont-Light" font.
+                Make sure the font file is included in the project and the font name is spelled correctly.
+                """
+            )
+        }
+        cell.textLabel?.font = UIFontMetrics.default.scaledFont(for: customFont)
+        cell.textLabel?.adjustsFontForContentSizeCategory = true
+        cell.textLabel?.font = customFont.withSize(24)
+        
+        let bgColorView = UIView()
+        bgColorView.backgroundColor = UIColor.red
+        cell.selectedBackgroundView = bgColorView
         return cell
     }
     

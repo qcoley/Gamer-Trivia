@@ -30,6 +30,7 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.addBackground(imageName: "GeneralBackground")
         table.delegate = self
         table.dataSource = self
         fetchQuestions()
@@ -39,7 +40,7 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     private func configureUI(question: Questions) {
         label.text = question.text
-        difficultyMultiplier.text = "Difficulty Multiplier: " +   String(question.difficulty)
+        difficultyMultiplier.text = "Difficulty: " +   String(question.difficulty)
         questionCounter?.text = String(currentQuestionCounter) + " of " + String(chosenQuestionArray.count)
         currentQuestion = question
         scoreLabel.text = "Score: " + String(score)
@@ -86,6 +87,23 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         answerset = currentQuestion?.answers?.allObjects as! [Answers]
         cell.textLabel?.text = answerset[indexPath.row].text
+        cell.textLabel?.textColor = UIColor.white
+        cell.textLabel?.textAlignment = NSTextAlignment.center
+        
+        guard let customFont = UIFont(name: "Arcade", size: UIFont.labelFontSize) else {
+            fatalError("""
+                Failed to load the "CustomFont-Light" font.
+                Make sure the font file is included in the project and the font name is spelled correctly.
+                """
+            )
+        }
+        cell.textLabel?.font = UIFontMetrics.default.scaledFont(for: customFont)
+        cell.textLabel?.adjustsFontForContentSizeCategory = true
+        cell.textLabel?.font = customFont.withSize(24)        
+        
+        let bgColorView = UIView()
+        bgColorView.backgroundColor = UIColor.red
+        cell.selectedBackgroundView = bgColorView
         return cell
     }
     
