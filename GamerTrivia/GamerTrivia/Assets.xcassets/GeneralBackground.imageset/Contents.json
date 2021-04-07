@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "GamerTriviaGeneralBackground@1x.png",
+      "filename" : "GeneralBackground@1x.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "GamerTriviaGeneralBackground@2x.png",
+      "filename" : "GeneralBackground@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "GamerTriviaGeneralBackground@3x.png",
+      "filename" : "GeneralBackground@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

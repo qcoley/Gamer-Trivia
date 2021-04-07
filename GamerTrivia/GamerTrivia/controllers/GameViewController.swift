@@ -25,7 +25,8 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet var table: UITableView!
     @IBOutlet var difficultyMultiplier: UILabel!
     @IBOutlet var questionCounter: UILabel!
-        
+    @IBOutlet var category: UILabel!
+    
     let context = PersistenceService.shared.persistentContainer.viewContext
 
     override func viewDidLoad() {
@@ -44,6 +45,7 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
         questionCounter?.text = String(currentQuestionCounter) + " of " + String(chosenQuestionArray.count)
         currentQuestion = question
         scoreLabel.text = "Score: " + String(score)
+        category.text = selectedCategory
         table.reloadData()
     }
     
@@ -60,6 +62,51 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     private func checkAnswer(answer: Answers, question: Questions) -> Bool {
         return (question.answers?.allObjects.contains(where: { ($0 as AnyObject).text == answer.text }))! && answer.correct
+    }
+    
+    private func correctAnswer() {
+        let earnedScore = 10 * Int(currentQuestion?.difficulty ?? 0)
+        score = score + earnedScore
+        scoreLabel.text = "Score: " + String(score)
+        playSound(soundToPlay: "pacman_extrapac")
+        let alert = UIAlertController(title: "Correct!", message: "You have been earned " + String(earnedScore) + " points.", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: { action in self.advanceCounter() }))
+        present(alert, animated: true)
+    }
+    
+    private func incorrectAnswer() {
+        score = score - 20
+        scoreLabel.text = "Score: " + String(score)
+        playSound(soundToPlay: "pacman_death")
+        let alert = UIAlertController(title: "Incorrect", message: "You have been penalized 20 points.", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
+        present(alert, animated: true)
+    }
+    
+    private func advanceCounter() {
+        currentQuestionCounter = currentQuestionCounter + 1
+        isThisTheLastQuestion()
+    }
+    
+    private func nextQuestion() {
+        let nextQuestion = chosenQuestionArray[currentQuestionCounter-1]
+        currentQuestion = nil
+        configureUI(question: nextQuestion)
+    }
+    
+    private func isThisTheLastQuestion() {
+        print (currentQuestionCounter, chosenQuestionArray.count)
+        if currentQuestionCounter == chosenQuestionArray.count + 1 {
+            gameFinal()
+        } else {
+            nextQuestion()
+        }
+    }
+    
+    private func gameFinal() {
+        let alert = UIAlertController(title: "Congratulations!", message: "You have scored " + String(score) + " points", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Dismiss", style: .default, handler:  { action in self.segueToHighScores() }))
+        self.present(alert, animated: true)
     }
     
     // Fetches questions and filters them based on the categories.
@@ -85,10 +132,15 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+            
+//            as! AuteurTableViewCell
         answerset = currentQuestion?.answers?.allObjects as! [Answers]
         cell.textLabel?.text = answerset[indexPath.row].text
+        
+        // Pretty up table view for custom background
+        table.tableFooterView = UIView(frame: .zero)
         cell.textLabel?.textColor = UIColor.white
-        cell.textLabel?.textAlignment = NSTextAlignment.center
+//        cell.answerLabel?.textAlignment = NSTextAlignment.center
         
         guard let customFont = UIFont(name: "Arcade", size: UIFont.labelFontSize) else {
             fatalError("""
@@ -99,7 +151,11 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
         cell.textLabel?.font = UIFontMetrics.default.scaledFont(for: customFont)
         cell.textLabel?.adjustsFontForContentSizeCategory = true
-        cell.textLabel?.font = customFont.withSize(24)        
+        cell.textLabel?.font = customFont.withSize(24)
+        cell.textLabel?.textAlignment = NSTextAlignment.center
+        cell.textLabel?.adjustsFontSizeToFitWidth = true
+        cell.textLabel?.numberOfLines = 2
+        
         
         let bgColorView = UIView()
         bgColorView.backgroundColor = UIColor.red
@@ -109,42 +165,27 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        guard let question = currentQuestion else {
-            return
-        }
+        guard let question = currentQuestion else { return }
         let answers = answerset[indexPath.row]
-
         if checkAnswer(answer: answers, question: question) {
-            let earnedScore = 10 * Int(currentQuestion?.difficulty ?? 0)
-            score = score + earnedScore
-            scoreLabel.text = "Score: " + String(score)
-            playSound(soundToPlay: "pacman_extrapac")
-            let alert = UIAlertController(title: "Correct!", message: "You have been earned " + String(earnedScore) + " points.", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
-            present(alert, animated: true)
-            // correct --> goes to next question or winner popup
-            if let index = chosenQuestionArray.firstIndex(where: { $0.text == question.text }) {
-                if index < (chosenQuestionArray.count - 1) {
-                    //next question
-                    currentQuestionCounter = currentQuestionCounter + 1
-                    let nextQuestion = chosenQuestionArray[index + 1]
-                    currentQuestion = nil
-                    configureUI(question: nextQuestion)
-                } else {
-                    let alert = UIAlertController(title: "Congratulations!", message: "You have scored " + String(score) + " points", preferredStyle: .alert)
-                    alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
-                    present(alert, animated: true)
-                }
-            }
+            correctAnswer()
         } else {
-            // wrong --> deduct penalty of 20 points, update score title and popup notice of penalty
-            score = score - 20
-            scoreLabel.text = "Score: " + String(score)
-            playSound(soundToPlay: "pacman_death")
-            let alert = UIAlertController(title: "Incorrect", message: "You have been penalized 20 points.", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
-            present(alert, animated: true)
-
+            incorrectAnswer()
+        }
+    }
+    
+    private func segueToHighScores() {
+        performSegue(withIdentifier: "HighScoreEntry", sender: nil)
+    }
+    
+    // Sets up passing the current Score to be passed to HighScoreControllerView
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "HighScoreEntry" {
+            let passedScore = self.score
+            let vc = segue.destination as! HighScoresViewController
+            vc.passedScore = passedScore
+            vc.modalPresentationStyle = .fullScreen
+            present(vc, animated: true)
         }
     }
 }

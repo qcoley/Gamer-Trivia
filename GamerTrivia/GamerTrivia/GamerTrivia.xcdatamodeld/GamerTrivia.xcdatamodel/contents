@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20C69" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20D91" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Answers" representedClassName="Answers" syncable="YES">
         <attribute name="correct" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="text" optional="YES" attributeType="String"/>
@@ -8,6 +8,10 @@
     <entity name="Categories" representedClassName="Categories" syncable="YES">
         <attribute name="text" optional="YES" attributeType="String"/>
         <relationship name="questions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Questions" inverseName="categories" inverseEntity="Questions"/>
+    </entity>
+    <entity name="HighScores" representedClassName="HighScores" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="score" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
     </entity>
     <entity name="Questions" representedClassName="Questions" syncable="YES">
         <attribute name="difficulty" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
@@ -19,6 +23,7 @@
     <elements>
         <element name="Answers" positionX="-32.2578125" positionY="-122.8125" width="128" height="74"/>
         <element name="Categories" positionX="-152.765625" positionY="-250.109375" width="128" height="59"/>
+        <element name="HighScores" positionX="-90" positionY="-333" width="128" height="59"/>
         <element name="Questions" positionX="-78.24609375" positionY="-491.77734375" width="128" height="104"/>
     </elements>
 </model>

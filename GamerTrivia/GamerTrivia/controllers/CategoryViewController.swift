@@ -17,6 +17,7 @@ class CategoryViewController: UIViewController, UITableViewDelegate, UITableView
     let persistence = PersistenceService.shared
     
     var cats:[Categories]?
+    var catsSorted:[Categories]?
     var selectedIndex: Int = 0
     var selectedCategory = ""
     var audioPlayer: AVAudioPlayer?
@@ -29,6 +30,7 @@ class CategoryViewController: UIViewController, UITableViewDelegate, UITableView
         // Grabs the current categories as loaded in CoreData for display in Table view
         persistence.fetch(Categories.self) { [weak self] (categories) in
             self?.cats = categories
+            self?.catsSorted = self?.cats?.sorted() {$0.text! < $1.text!}
             self?.Table.reloadData()
         }
 //        playSound(soundToPlay: "pacman_chomp")
@@ -46,15 +48,18 @@ class CategoryViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.cats?.count ?? 0
+        return self.catsSorted?.count ?? 0
     }
  
     // Populates the tableView
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = Table.dequeueReusableCell(withIdentifier: "CategoryItem", for: indexPath)
-        let category = self.cats?[indexPath.row]
+        let category = self.catsSorted?[indexPath.row]
         let categoryQuestionCount = category?.questions?.count ?? 0
         cell.textLabel?.text = (category?.text)! + " (" + String(categoryQuestionCount) + ")"
+        
+        // Pretty up table for the custom background
+        Table.tableFooterView = UIView(frame: .zero)
         cell.textLabel?.textColor = UIColor.white
         cell.textLabel?.textAlignment = NSTextAlignment.center
         
@@ -89,7 +94,7 @@ class CategoryViewController: UIViewController, UITableViewDelegate, UITableView
     // Sets up passing the currently selected Category to the GameControllerView for filtering
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "StartGame" {
-            let catset = self.cats!
+            let catset = self.catsSorted!
             let passedCat = catset[selectedIndex].text
             let vc = segue.destination as! GameViewController
             vc.selectedCategory = passedCat!

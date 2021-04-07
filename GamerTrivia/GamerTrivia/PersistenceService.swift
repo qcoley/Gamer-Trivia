@@ -61,6 +61,8 @@ public class PersistenceService {
             if !UserDefaults.standard.bool(forKey: "hasRunOnce") {
                 UserDefaults.standard.setValue(true, forKey: "hasRunOnce")
                 setupSampleData()
+                setUpDefaultScores()
+                print ("Setting up Sample Data and Default Scores")
             }
         
         if let localData = self.readLocalFile(forName: "GamerTrivia") {
@@ -75,6 +77,7 @@ public class PersistenceService {
             {
                 return jsonData
             }
+            print ("Reading JSON file")
         } catch {
             print(error)
         }
@@ -84,8 +87,7 @@ public class PersistenceService {
     
     private func parse(jsonData: Data) {
         do {
-            
-            if let json = try JSONSerialization.jsonObject(with: jsonData, options: [.mutableContainers])
+               if let json = try JSONSerialization.jsonObject(with: jsonData, options: [.mutableContainers])
                 as? [String: AnyObject] {
                 
                 guard let categoriesJsonArray = json["categories"] as? [String] else
@@ -103,7 +105,7 @@ public class PersistenceService {
                 for question in questionsJsonArray {
                     self.saveQuestionsInCoreDataWith(array: question as! [String : AnyObject])
                 }
-                
+               print ("Parsing JSON file")
             }
         } catch let error {
             print(error)
@@ -366,7 +368,25 @@ public class PersistenceService {
         save ()
     }
     
-    
+    private func setUpDefaultScores() {
+        let defaultScore1 = NSEntityDescription.insertNewObject(forEntityName: "HighScores", into: context) as! HighScores
+        defaultScore1.name = "DexWasHere"
+        defaultScore1.score = 120
+        
+        let defaultScore2 = NSEntityDescription.insertNewObject(forEntityName: "HighScores", into: context) as! HighScores
+        defaultScore2.name = "Deepshadow"
+        defaultScore2.score = 80
+        
+        let defaultScore3 = NSEntityDescription.insertNewObject(forEntityName: "HighScores", into: context) as! HighScores
+        defaultScore3.name = "Veras"
+        defaultScore3.score = 100
+        
+        let defaultScore4 = NSEntityDescription.insertNewObject(forEntityName: "HighScores", into: context) as! HighScores
+        defaultScore4.name = "Thogrun"
+        defaultScore4.score = 100
+        
+        save()
+    }
 
 }
 
