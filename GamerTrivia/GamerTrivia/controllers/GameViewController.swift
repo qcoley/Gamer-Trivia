@@ -28,7 +28,10 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet var category: UILabel!
     
     let context = PersistenceService.shared.persistentContainer.viewContext
-
+    var selectedIncorrectIndex = IndexPath(row: -1, section: 0)
+    var selectedCorrectIndex = IndexPath(row: -1, section: 0)
+    let SCORE_PENALTY = 20
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addBackground(imageName: "GeneralBackground")
@@ -75,12 +78,12 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     private func incorrectAnswer() {
-        score = score - 20
+        score = score - SCORE_PENALTY
         scoreLabel.text = "Score: " + String(score)
         playSound(soundToPlay: "pacman_death")
-        let alert = UIAlertController(title: "Incorrect", message: "You have been penalized 20 points.", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
-        present(alert, animated: true)
+//        let alert = UIAlertController(title: "Incorrect", message: "You have been penalized 20 points.", preferredStyle: .alert)
+//        alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
+//        present(alert, animated: true)
     }
     
     private func advanceCounter() {
@@ -159,6 +162,38 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
         let bgColorView = UIView()
         bgColorView.backgroundColor = UIColor.red
         cell.selectedBackgroundView = bgColorView
+        
+        if selectedIncorrectIndex == indexPath {
+            let textAttributes = [NSAttributedString.Key.foregroundColor: UIColor.gray]
+            let pointAttributes = [NSAttributedString.Key.foregroundColor: UIColor.red]
+
+            let partOne = NSMutableAttributedString(string: cell.textLabel?.text ?? "", attributes: textAttributes)
+            let partTwo = NSMutableAttributedString(string: " [-\(SCORE_PENALTY)]", attributes: pointAttributes)
+
+            let combination = NSMutableAttributedString()
+
+            combination.append(partOne)
+            combination.append(partTwo)
+            
+            cell.textLabel?.attributedText = combination
+        }
+        
+        if selectedCorrectIndex == indexPath {
+            let earnedScore = 10 * Int(currentQuestion?.difficulty ?? 0)
+            let textAttributes = [NSAttributedString.Key.foregroundColor: UIColor.systemGreen]
+            let pointAttributes = [NSAttributedString.Key.foregroundColor: UIColor.green]
+
+            let partOne = NSMutableAttributedString(string: cell.textLabel?.text ?? "", attributes: textAttributes)
+            let partTwo = NSMutableAttributedString(string: " [+\(earnedScore)]", attributes: pointAttributes)
+
+            let combination = NSMutableAttributedString()
+
+            combination.append(partOne)
+            combination.append(partTwo)
+            
+            cell.textLabel?.attributedText = combination
+        }
+        
         return cell
     }
     
@@ -166,10 +201,15 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.deselectRow(at: indexPath, animated: true)
         guard let question = currentQuestion else { return }
         let answers = answerset[indexPath.row]
+        let indexesToRedraw = [indexPath]
         if checkAnswer(answer: answers, question: question) {
             correctAnswer()
+            selectedCorrectIndex = indexPath
+            tableView.reloadRows(at: indexesToRedraw, with: .fade)
         } else {
             incorrectAnswer()
+            selectedIncorrectIndex = indexPath
+            tableView.reloadRows(at: indexesToRedraw, with: .fade)
         }
     }
     
