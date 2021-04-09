@@ -14,6 +14,7 @@
 		A5C8F6BB260EB0BD001A4D13 /* Categories+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C8F6B5260EB0BD001A4D13 /* Categories+CoreDataClass.swift */; };
 		A5C8F6BC260EB0BD001A4D13 /* Categories+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C8F6B6260EB0BD001A4D13 /* Categories+CoreDataProperties.swift */; };
 		A5C8F6D3260EB570001A4D13 /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C8F6C8260EB23D001A4D13 /* PersistenceService.swift */; };
+		A5D4E176261FDA160036F8BE /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = A5D4E175261FDA160036F8BE /* data.json */; };
 		B932AA2D25FA6DEF009CD43E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B932AA2C25FA6DEF009CD43E /* AppDelegate.swift */; };
 		B932AA2F25FA6DEF009CD43E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B932AA2E25FA6DEF009CD43E /* SceneDelegate.swift */; };
 		B932AA3425FA6DEF009CD43E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B932AA3225FA6DEF009CD43E /* Main.storyboard */; };
@@ -32,7 +33,6 @@
 		EC10554A260F1E2200050F35 /* pacman_extrapac.wav in Resources */ = {isa = PBXBuildFile; fileRef = EC105543260F1E2200050F35 /* pacman_extrapac.wav */; };
 		EC10554B260F1E2200050F35 /* pacman_intermission.wav in Resources */ = {isa = PBXBuildFile; fileRef = EC105544260F1E2200050F35 /* pacman_intermission.wav */; };
 		ECA7C1E4261E431100A9610A /* GameOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA7C1E3261E431100A9610A /* GameOverViewController.swift */; };
-		ECC39117261D5C910090A75A /* GamerTrivia.json in Resources */ = {isa = PBXBuildFile; fileRef = ECC39116261D5C910090A75A /* GamerTrivia.json */; };
 		ECC39125261D6A650090A75A /* AddHighScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC39124261D6A650090A75A /* AddHighScoreViewController.swift */; };
 		ECC62DC2261C22CF00CCEFB3 /* HighScoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC62DC1261C22CF00CCEFB3 /* HighScoresViewController.swift */; };
 		ECC62DCB261CB42700CCEFB3 /* HighScores+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC62DC9261CB42700CCEFB3 /* HighScores+CoreDataClass.swift */; };
@@ -70,6 +70,7 @@
 		A5C8F6B5260EB0BD001A4D13 /* Categories+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Categories+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 		A5C8F6B6260EB0BD001A4D13 /* Categories+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Categories+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		A5C8F6C8260EB23D001A4D13 /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
+		A5D4E175261FDA160036F8BE /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		B932AA2925FA6DEF009CD43E /* GamerTrivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GamerTrivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B932AA2C25FA6DEF009CD43E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B932AA2E25FA6DEF009CD43E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -95,7 +96,6 @@
 		EC105543260F1E2200050F35 /* pacman_extrapac.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pacman_extrapac.wav; sourceTree = "<group>"; };
 		EC105544260F1E2200050F35 /* pacman_intermission.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pacman_intermission.wav; sourceTree = "<group>"; };
 		ECA7C1E3261E431100A9610A /* GameOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverViewController.swift; sourceTree = "<group>"; };
-		ECC39116261D5C910090A75A /* GamerTrivia.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = GamerTrivia.json; path = ../../../../GamerTrivia.json; sourceTree = "<group>"; };
 		ECC39124261D6A650090A75A /* AddHighScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHighScoreViewController.swift; sourceTree = "<group>"; };
 		ECC62DC1261C22CF00CCEFB3 /* HighScoresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoresViewController.swift; sourceTree = "<group>"; };
 		ECC62DC9261CB42700CCEFB3 /* HighScores+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HighScores+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -234,7 +234,6 @@
 		ECCA9A842603DEE400CB1EFF /* model */ = {
 			isa = PBXGroup;
 			children = (
-				ECC39116261D5C910090A75A /* GamerTrivia.json */,
 				ECC62DC9261CB42700CCEFB3 /* HighScores+CoreDataClass.swift */,
 				ECC62DCA261CB42700CCEFB3 /* HighScores+CoreDataProperties.swift */,
 				A5C8F6B1260EB0BD001A4D13 /* Questions+CoreDataClass.swift */,
@@ -243,6 +242,7 @@
 				A5C8F6B4260EB0BD001A4D13 /* Answers+CoreDataProperties.swift */,
 				A5C8F6B5260EB0BD001A4D13 /* Categories+CoreDataClass.swift */,
 				A5C8F6B6260EB0BD001A4D13 /* Categories+CoreDataProperties.swift */,
+				A5D4E175261FDA160036F8BE /* data.json */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -361,13 +361,13 @@
 				B932AA3C25FA6DF4009CD43E /* LaunchScreen.storyboard in Resources */,
 				EC10554A260F1E2200050F35 /* pacman_extrapac.wav in Resources */,
 				EC10554B260F1E2200050F35 /* pacman_intermission.wav in Resources */,
+				A5D4E176261FDA160036F8BE /* data.json in Resources */,
 				EC105548260F1E2200050F35 /* pacman_eatfruit.wav in Resources */,
 				B932AA3925FA6DF4009CD43E /* Assets.xcassets in Resources */,
 				EC105546260F1E2200050F35 /* pacman_chomp.wav in Resources */,
 				ECC99ADD261A9F8E00152663 /* ARCADE.TTF in Resources */,
 				EC105549260F1E2200050F35 /* pacman_beginning.wav in Resources */,
 				EC105545260F1E2200050F35 /* pacman_eatghost.wav in Resources */,
-				ECC39117261D5C910090A75A /* GamerTrivia.json in Resources */,
 				ECC99AC72617DB7D00152663 /* insertCoin.mp3 in Resources */,
 				B932AA3425FA6DEF009CD43E /* Main.storyboard in Resources */,
 			);

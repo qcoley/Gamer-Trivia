@@ -1,0 +1,2654 @@
+{
+   "categories":[
+      "MMO's",
+      "Arcade",
+      "Console",
+      "1980's",
+      "1990's",
+      "2000's",
+      "Nintendo",
+      "Sega"
+   ],
+   "questions":[
+      {
+         "text":"What was one of the original playable races in Everquest?",
+         "categories":[
+            "MMO's",
+            "1990's"
+         ],
+         "difficulty":3,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Goblin",
+               "correct":false
+            },
+            {
+               "text":"Orc",
+               "correct":false
+            },
+            {
+               "text":"Imperial",
+               "correct":false
+            },
+            {
+               "text":"Dunmer",
+               "correct":false
+            },
+            {
+               "text":"Halfling",
+               "correct":true
+            }
+         ]
+      },
+      {
+         "text":"How many original classes were available to play in Everquest?",
+         "categories":[
+            "MMO's",
+            "1990's"
+         ],
+         "difficulty":5,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"5",
+               "correct":false
+            },
+            {
+               "text":"14",
+               "correct":true
+            },
+            {
+               "text":"8",
+               "correct":false
+            },
+            {
+               "text":"10",
+               "correct":false
+            },
+            {
+               "text":"7",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"What was one of the original classes available to play in Everquest?",
+         "categories":[
+            "MMO's",
+            "1990's"
+         ],
+         "difficulty":3,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Death Knight",
+               "correct":false
+            },
+            {
+               "text":"Astrologian",
+               "correct":false
+            },
+            {
+               "text":"Magician",
+               "correct":true
+            },
+            {
+               "text":"White Mage",
+               "correct":false
+            },
+            {
+               "text":"Warden",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"What is the correct description for the Monk class in Everquest?",
+         "categories":[
+            "MMO's",
+            "1990's"
+         ],
+         "difficulty":2,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"A mind-bending spellcaster, providing superb support magic and a few pet options.",
+               "correct":false
+            },
+            {
+               "text":"A spellcaster of death, and life-draining. Master of Fire, Disease, Poison and Magic.",
+               "correct":false
+            },
+            {
+               "text":"Hybrid Druid/Warrior. A forester who deals strong sustained damage from near or far.",
+               "correct":false
+            },
+            {
+               "text":"A martial artist with very strong burst and sustained damage.",
+               "correct":true
+            }
+         ]
+      },
+      {
+         "text":"In what year was Everquest released (North America)?",
+         "categories":[
+            "MMO's",
+            "1990's"
+         ],
+         "difficulty":3,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"2001",
+               "correct":false
+            },
+            {
+               "text":"1997",
+               "correct":false
+            },
+            {
+               "text":"2003",
+               "correct":false
+            },
+            {
+               "text":"1994",
+               "correct":false
+            },
+            {
+               "text":"1999",
+               "correct":true
+            }
+         ]
+      },
+      {
+         "text":"Everquest has more than 10 expansions, True or False?",
+         "categories":[
+            "MMO's",
+            "1990's"
+         ],
+         "difficulty":1,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"True",
+               "correct":true
+            },
+            {
+               "text":"False",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"What is the name of the fantasy world that Everquest takes place in?",
+         "categories":[
+            "MMO's",
+            "1990's"
+         ],
+         "difficulty":5,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Middle-Earth",
+               "correct":false
+            },
+            {
+               "text":"Azeroth",
+               "correct":false
+            },
+            {
+               "text":"Tyria",
+               "correct":false
+            },
+            {
+               "text":"Norrath",
+               "correct":true
+            },
+            {
+               "text":"Hyrule",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"What area in Everquest is considered to be the official hub of the game world?",
+         "categories":[
+            "MMO's",
+            "1990's"
+         ],
+         "difficulty":7,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Lumbridge",
+               "correct":false
+            },
+            {
+               "text":"Velious",
+               "correct":false
+            },
+            {
+               "text":"Plane of Knowledge",
+               "correct":true
+            },
+            {
+               "text":"Ironforge",
+               "correct":false
+            },
+            {
+               "text":"Feydwer",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"Everquest first popularized the (3D) MMO genre, True or False?",
+         "categories":[
+            "MMO's",
+            "1990's"
+         ],
+         "difficulty":5,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"True",
+               "correct":true
+            },
+            {
+               "text":"False",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"What is the type of game genre that is considered to be the predecessor of Everquest?",
+         "categories":[
+            "MMO's",
+            "1990's"
+         ],
+         "difficulty":5,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Metroidvania",
+               "correct":false
+            },
+            {
+               "text":"Survival",
+               "correct":false
+            },
+            {
+               "text":"Shooter",
+               "correct":false
+            },
+            {
+               "text":"MUD (Multi-user Dungeon)",
+               "correct":true
+            },
+            {
+               "text":"Battle Royale",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"Which of these is a character(NPC) from Everquest?",
+         "categories":[
+            "MMO's",
+            "1990's"
+         ],
+         "difficulty":8,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Mario",
+               "correct":false
+            },
+            {
+               "text":"Alphinaud Leveilleur",
+               "correct":false
+            },
+            {
+               "text":"Kel'thuzad",
+               "correct":false
+            },
+            {
+               "text":"Beno Targnarle",
+               "correct":true
+            },
+            {
+               "text":"Aragorn",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"In Everquest, who was considered to be one of the original 'bosses' of the game?",
+         "categories":[
+            "MMO's",
+            "1990's"
+         ],
+         "difficulty":8,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Ganon",
+               "correct":false
+            },
+            {
+               "text":"Nagafen",
+               "correct":true
+            },
+            {
+               "text":"Brell",
+               "correct":false
+            },
+            {
+               "text":"Doomshade",
+               "correct":false
+            },
+            {
+               "text":"Zelnithak",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"What is the name of the original island that players started on in RuneScape?",
+         "categories":[
+            "MMO's",
+            "1990's"
+         ],
+         "difficulty":3,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Summerset Isle",
+               "correct":false
+            },
+            {
+               "text":"Dragon Isles",
+               "correct":false
+            },
+            {
+               "text":"Trainee Island",
+               "correct":true
+            },
+            {
+               "text":"Isle Delphino",
+               "correct":false
+            },
+            {
+               "text":"Monkey Island",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"Who has been one of the most well-known players through the RuneScape’s history?",
+         "categories":[
+            "MMO's",
+            "1990's"
+         ],
+         "difficulty":3,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Kuzi",
+               "correct":false
+            },
+            {
+               "text":"Zezima",
+               "correct":true
+            },
+            {
+               "text":"Frodo",
+               "correct":false
+            },
+            {
+               "text":"Tepsi",
+               "correct":false
+            },
+            {
+               "text":"Psyotek",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"What is the price of a tinderbox from the General Store in RuneScape?",
+         "categories":[
+            "MMO's",
+            "1990's"
+         ],
+         "difficulty":5,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"500gp",
+               "correct":false
+            },
+            {
+               "text":"20kgp",
+               "correct":false
+            },
+            {
+               "text":"1gp",
+               "correct":true
+            },
+            {
+               "text":"5kgp",
+               "correct":false
+            },
+            {
+               "text":"Free",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"In RuneScape, what skill ability allows you to create bowstrings?",
+         "categories":[
+            "MMO's",
+            "1990's"
+         ],
+         "difficulty":3,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Fletching",
+               "correct":false
+            },
+            {
+               "text":"Mining",
+               "correct":false
+            },
+            {
+               "text":"Leatherworking",
+               "correct":false
+            },
+            {
+               "text":"Crafting",
+               "correct":true
+            },
+            {
+               "text":"Prayer",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"What weapon is a reward from the infamous RuneScape quest Monkey Madness?",
+         "categories":[
+            "MMO's",
+            "1990's"
+         ],
+         "difficulty":7,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Dragon Scimitar",
+               "correct":true
+            },
+            {
+               "text":"Mithril Dagger",
+               "correct":false
+            },
+            {
+               "text":"Thunderfury",
+               "correct":false
+            },
+            {
+               "text":"Steel Longsword",
+               "correct":false
+            },
+            {
+               "text":"Excaliber",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"What town in RuneScape is most well-known for its fishing spots?",
+         "categories":[
+            "MMO's",
+            "1990's"
+         ],
+         "difficulty":5,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Lumbridge",
+               "correct":false
+            },
+            {
+               "text":"Burthorpe",
+               "correct":false
+            },
+            {
+               "text":"Edgeville",
+               "correct":false
+            },
+            {
+               "text":"Falador",
+               "correct":false
+            },
+            {
+               "text":"Catherby",
+               "correct":true
+            }
+         ]
+      },
+      {
+         "text":"In RuneScape, what item allows access to Hill Giant and Edgeville dungeons?",
+         "categories":[
+            "MMO's",
+            "1990's"
+         ],
+         "difficulty":5,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Arclite Spanner",
+               "correct":false
+            },
+            {
+               "text":"Brass Key",
+               "correct":true
+            },
+            {
+               "text":"Skeleton Key",
+               "correct":false
+            },
+            {
+               "text":"Lockpick",
+               "correct":false
+            },
+            {
+               "text":"Your Fists",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"In RuneScape, what is the highest combat level a player can obtain?",
+         "categories":[
+            "MMO's",
+            "1990's"
+         ],
+         "difficulty":7,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"126",
+               "correct":false
+            },
+            {
+               "text":"94",
+               "correct":false
+            },
+            {
+               "text":"138",
+               "correct":true
+            },
+            {
+               "text":"70",
+               "correct":false
+            },
+            {
+               "text":"No limit",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"How many non-member (free) quests are there in RuneScape?",
+         "categories":[
+            "MMO's",
+            "1990's"
+         ],
+         "difficulty":8,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"19",
+               "correct":true
+            },
+            {
+               "text":"26",
+               "correct":false
+            },
+            {
+               "text":"5",
+               "correct":false
+            },
+            {
+               "text":"12",
+               "correct":false
+            },
+            {
+               "text":"32",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"What is the best type of armor RuneScape players can create(smith)?",
+         "categories":[
+            "MMO's",
+            "1990's"
+         ],
+         "difficulty":5,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Adamant",
+               "correct":false
+            },
+            {
+               "text":"Granite",
+               "correct":false
+            },
+            {
+               "text":"Barrows",
+               "correct":false
+            },
+            {
+               "text":"Nemesis",
+               "correct":false
+            },
+            {
+               "text":"Rune",
+               "correct":true
+            }
+         ]
+      },
+      {
+         "text":"What company created RuneScape?",
+         "categories":[
+            "MMO's",
+            "1990's"
+         ],
+         "difficulty":3,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Jagex",
+               "correct":true
+            },
+            {
+               "text":"Blizzard",
+               "correct":false
+            },
+            {
+               "text":"Sony",
+               "correct":false
+            },
+            {
+               "text":"Microsoft",
+               "correct":false
+            },
+            {
+               "text":"Valve",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"In RuneScape, where is the Wizard Guild located?",
+         "categories":[
+            "MMO's",
+            "1990's"
+         ],
+         "difficulty":5,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Yanille",
+               "correct":true
+            },
+            {
+               "text":"Burthorpe",
+               "correct":false
+            },
+            {
+               "text":"Kakariko",
+               "correct":false
+            },
+            {
+               "text":"Varrock",
+               "correct":false
+            },
+            {
+               "text":"Castle Town",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"What is the name of one of the primary factions in World of Warcraft?",
+         "categories":[
+            "MMO's",
+            "1990's",
+            "2000's"
+         ],
+         "difficulty":1,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Hibernia",
+               "correct":false
+            },
+            {
+               "text":"Asmodian",
+               "correct":false
+            },
+            {
+               "text":"Horde",
+               "correct":true
+            },
+            {
+               "text":"Balaur",
+               "correct":false
+            },
+            {
+               "text":"Twin Adder",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"In what year was World of Warcraft released? (North America)",
+         "categories":[
+            "MMO's",
+            "1990's",
+            "2000's"
+         ],
+         "difficulty":3,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"2001",
+               "correct":false
+            },
+            {
+               "text":"2007",
+               "correct":false
+            },
+            {
+               "text":"1999",
+               "correct":false
+            },
+            {
+               "text":"2004",
+               "correct":true
+            },
+            {
+               "text":"2010",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"In World of Warcraft, what did the High-Elves (Quel'dorei) rename themselves to after the destruction of the Sunwell?",
+         "categories":[
+            "MMO's",
+            "1990's",
+            "2000's"
+         ],
+         "difficulty":5,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Night Elves",
+               "correct":false
+            },
+            {
+               "text":"Bosmer (Wood Elves)",
+               "correct":false
+            },
+            {
+               "text":"Illidari",
+               "correct":false
+            },
+            {
+               "text":"Dwemer (Deep Elves)",
+               "correct":false
+            },
+            {
+               "text":"Blood Elves",
+               "correct":true
+            }
+         ]
+      },
+      {
+         "text":"Which legendary paladin weapon in World of Warcraft was created by the dwarven king, Magni Bronzebeard?",
+         "categories":[
+            "MMO's",
+            "1990's",
+            "2000's"
+         ],
+         "difficulty":5,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Ashbringer",
+               "correct":true
+            },
+            {
+               "text":"Thunderfury",
+               "correct":false
+            },
+            {
+               "text":"Light's Wrath",
+               "correct":false
+            },
+            {
+               "text":"Ashkhandi",
+               "correct":false
+            },
+            {
+               "text":"Atiesh",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"What is the starting zone for the Orc race in World of Warcraft?",
+         "categories":[
+            "MMO's",
+            "1990's",
+            "2000's"
+         ],
+         "difficulty":3,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Outlands",
+               "correct":false
+            },
+            {
+               "text":"Mulgore",
+               "correct":false
+            },
+            {
+               "text":"Durotar",
+               "correct":true
+            },
+            {
+               "text":"Eversong Forest",
+               "correct":false
+            },
+            {
+               "text":"Plaugelands",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"What are the two major continents in the original version of World of Warcraft?",
+         "categories":[
+            "MMO's",
+            "1990's",
+            "2000's"
+         ],
+         "difficulty":3,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Pandaria and Teldrassil",
+               "correct":false
+            },
+            {
+               "text":"Kalimdor and Eastern Kingdoms",
+               "correct":true
+            },
+            {
+               "text":"Nazjatar and Kultiras",
+               "correct":false
+            },
+            {
+               "text":"Northrend and Zandalar",
+               "correct":false
+            },
+            {
+               "text":"Draenor and Twilight Highlands",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"In World of Warcraft, what is the type of armor that the Shaman class wears?",
+         "categories":[
+            "MMO's",
+            "1990's",
+            "2000's"
+         ],
+         "difficulty":5,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Mail",
+               "correct":true
+            },
+            {
+               "text":"Cloth",
+               "correct":false
+            },
+            {
+               "text":"Leather",
+               "correct":false
+            },
+            {
+               "text":"Plate",
+               "correct":false
+            },
+            {
+               "text":"Fae-woven",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"In World of Warcraft, which class has the ability to summon demons to fight?",
+         "categories":[
+            "MMO's",
+            "1990's",
+            "2000's"
+         ],
+         "difficulty":3,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Mage",
+               "correct":false
+            },
+            {
+               "text":"Necromancer",
+               "correct":false
+            },
+            {
+               "text":"Ranger",
+               "correct":false
+            },
+            {
+               "text":"Warlock",
+               "correct":true
+            },
+            {
+               "text":"Death Knight",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"At World of Warcraft’s peak of popularity, the game had over 10 million active players, True or False?",
+         "categories":[
+            "MMO's",
+            "1990's",
+            "2000's"
+         ],
+         "difficulty":2,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"True",
+               "correct":true
+            },
+            {
+               "text":"False",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"What is the name of World of Warcraft’s first expansion?",
+         "categories":[
+            "MMO's",
+            "1990's",
+            "2000's"
+         ],
+         "difficulty":3,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"The High Tide",
+               "correct":false
+            },
+            {
+               "text":"Nightfall",
+               "correct":false
+            },
+            {
+               "text":"Shadowbringers",
+               "correct":false
+            },
+            {
+               "text":"Heart of Thorns",
+               "correct":false
+            },
+            {
+               "text":"The Bruning Crusade",
+               "correct":true
+            }
+         ]
+      },
+      {
+         "text":"Who is the infamous World of Warcraft Villain featured in the Wrath of the Lich King Expansion?",
+         "categories":[
+            "MMO's",
+            "1990's",
+            "2000's"
+         ],
+         "difficulty":5,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Scarlet Briar",
+               "correct":false
+            },
+            {
+               "text":"Arthas Menethil",
+               "correct":true
+            },
+            {
+               "text":"Neltharion",
+               "correct":false
+            },
+            {
+               "text":"Grenth",
+               "correct":false
+            },
+            {
+               "text":"Balthazar",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"What class types are considered to be the trinity in World of Warcraft, which are fundamental to the combat system?",
+         "categories":[
+            "MMO's",
+            "1990's",
+            "2000's"
+         ],
+         "difficulty":5,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Damage, Stealth, Magic Casters",
+               "correct":false
+            },
+            {
+               "text":"Support, Crowd Control, Stealth",
+               "correct":false
+            },
+            {
+               "text":"Stealth, Damage, Crowd Control",
+               "correct":false
+            },
+            {
+               "text":"Tank, Damage, Healing",
+               "correct":true
+            },
+            {
+               "text":"Tank, Support, Glider",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"A game released in 1981 in which the object was to cross a road and avoid being run over or eaten. What was the name of this game?",
+         "categories":[
+            "Arcade",
+            "1980's"
+         ],
+         "difficulty":3,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Rampage",
+               "correct":false
+            },
+            {
+               "text":"Duck Hunt",
+               "correct":false
+            },
+            {
+               "text":"Frogger",
+               "correct":true
+            },
+            {
+               "text":"Streets of Rage",
+               "correct":false
+            },
+            {
+               "text":"Tekken",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"Which of these games featured an orange character hopping on a pyramid of cubes?",
+         "categories":[
+            "Arcade",
+            "1980's"
+         ],
+         "difficulty":5,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Dig Dug",
+               "correct":false
+            },
+            {
+               "text":"Q*Bert",
+               "correct":true
+            },
+            {
+               "text":"Jungle King",
+               "correct":false
+            },
+            {
+               "text":"Donkey Kong Junior",
+               "correct":false
+            },
+            {
+               "text":"PAC man",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"If using a rollerball as a controller to try to fight off insects, which of these games would one be playing?",
+         "categories":[
+            "Arcade",
+            "1980's"
+         ],
+         "difficulty":8,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Punch Out",
+               "correct":false
+            },
+            {
+               "text":"Space Invaders",
+               "correct":false
+            },
+            {
+               "text":"Centipede",
+               "correct":true
+            },
+            {
+               "text":"Tron",
+               "correct":false
+            },
+            {
+               "text":"Aero Fighters",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"Which of these arcade games has you building hamburgers while being chased by a hotdog, a pickle and an egg?",
+         "categories":[
+            "Arcade",
+            "1980's"
+         ],
+         "difficulty":5,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Burger King",
+               "correct":false
+            },
+            {
+               "text":"Egg Head",
+               "correct":false
+            },
+            {
+               "text":"Chef Man",
+               "correct":false
+            },
+            {
+               "text":"Burger Time",
+               "correct":true
+            },
+            {
+               "text":"Area 51",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"Which of these games featured a knight riding a flying ostrich and allowed cooperative play with another person?",
+         "categories":[
+            "Arcade",
+            "1980's"
+         ],
+         "difficulty":5,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Dig Dug",
+               "correct":false
+            },
+            {
+               "text":"Joust",
+               "correct":true
+            },
+            {
+               "text":"Tempest",
+               "correct":false
+            },
+            {
+               "text":"Knight Rider",
+               "correct":false
+            },
+            {
+               "text":"Double Dragon",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"Which arcade game allowed you to get on a motorcycle and use it as the controller?",
+         "categories":[
+            "Arcade",
+            "1980's"
+         ],
+         "difficulty":5,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Pole Position",
+               "correct":false
+            },
+            {
+               "text":"Moon Patrol",
+               "correct":false
+            },
+            {
+               "text":"Spy Hunter",
+               "correct":false
+            },
+            {
+               "text":"Hang On",
+               "correct":true
+            },
+            {
+               "text":"Death Race",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"Which arcade game has you controlling a spacecraft down a three dimensional tube destroying your enemies?",
+         "categories":[
+            "Arcade",
+            "1980's"
+         ],
+         "difficulty":5,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Gorf",
+               "correct":false
+            },
+            {
+               "text":"Berzerkl",
+               "correct":false
+            },
+            {
+               "text":"Time Pilot",
+               "correct":false
+            },
+            {
+               "text":"Tempest",
+               "correct":true
+            },
+            {
+               "text":"Pong",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"Which arcade game first introduced the character that would eventually become known as Mario in its sequels?",
+         "categories":[
+            "Arcade",
+            "1980's",
+            "Nintendo"
+         ],
+         "difficulty":3,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Donkey Kong",
+               "correct":true
+            },
+            {
+               "text":"Jungle King",
+               "correct":false
+            },
+            {
+               "text":"Dig Dug",
+               "correct":false
+            },
+            {
+               "text":"PAC Man",
+               "correct":false
+            },
+            {
+               "text":"Gauntlet",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"Which of these following arcade games was one of the first 'run and gun shooters'?",
+         "categories":[
+            "Arcade",
+            "1980's"
+         ],
+         "difficulty":5,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"1942",
+               "correct":true
+            },
+            {
+               "text":"Spy Hunter",
+               "correct":false
+            },
+            {
+               "text":"Paper Boy",
+               "correct":false
+            },
+            {
+               "text":"Front Line",
+               "correct":true
+            },
+            {
+               "text":"Ridge Racer",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"'Pac Man' was developed by Namco in Japan, but which company was the United States distributor of the game?",
+         "categories":[
+            "Arcade",
+            "1980's"
+         ],
+         "difficulty":3,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Nintendo",
+               "correct":true
+            },
+            {
+               "text":"Atari",
+               "correct":false
+            },
+            {
+               "text":"Midway",
+               "correct":true
+            },
+            {
+               "text":"Sega",
+               "correct":false
+            },
+            {
+               "text":"Namco",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"What does 'Donkey Kong' have to do with donkeys?",
+         "categories":[
+            "Arcade",
+            "1980's",
+            "Nintendo"
+         ],
+         "difficulty":3,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"It was named after a famous animal.",
+               "correct":false
+            },
+            {
+               "text":"The developers wanted to immortalize one of their cherished pets.",
+               "correct":false
+            },
+            {
+               "text":"Nothing.",
+               "correct":true
+            },
+            {
+               "text":"It was a popular word at the time.",
+               "correct":false
+            },
+            {
+               "text":"Donkeys are related to gorillas.",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"How many dots are there on a 'Pac Man' board?",
+         "categories":[
+            "Arcade",
+            "1980's"
+         ],
+         "difficulty":8,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"240.",
+               "correct":true
+            },
+            {
+               "text":"192.",
+               "correct":false
+            },
+            {
+               "text":"90.",
+               "correct":false
+            },
+            {
+               "text":"320.",
+               "correct":false
+            },
+            {
+               "text":"210.",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"On the first day of it's existence, the original 'Pong' game broke down. Why?",
+         "categories":[
+            "Arcade",
+            "1980's"
+         ],
+         "difficulty":5,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"It wasn't properly tested before hand.",
+               "correct":false
+            },
+            {
+               "text":"Someone smashed it.",
+               "correct":false
+            },
+            {
+               "text":"The hardware over-heated.",
+               "correct":false
+            },
+            {
+               "text":"The coin box was over-stuffed with coins.",
+               "correct":true
+            },
+            {
+               "text":"No one knows.",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"What is the difference between RAM and ROM, in regard to classic games?",
+         "categories":[
+            "Arcade",
+            "1980's"
+         ],
+         "difficulty":4,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"RAM is the game data and ROM is just a misspelling.",
+               "correct":false
+            },
+            {
+               "text":"RAM and ROM are terms related to something different.",
+               "correct":false
+            },
+            {
+               "text":"ROM is just random memory.",
+               "correct":false
+            },
+            {
+               "text":"A RAM is a vehicle, dude.",
+               "correct":false
+            },
+            {
+               "text":"RAM is random access memory, and ROM is read only memory (which is the games program).",
+               "correct":true
+            }
+         ]
+      },
+      {
+         "text":"In which classic video game is the player represented by a paintbrush?",
+         "categories":[
+            "Arcade",
+            "1980's"
+         ],
+         "difficulty":5,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Frogger",
+               "correct":false
+            },
+            {
+               "text":"Microsoft Paint",
+               "correct":false
+            },
+            {
+               "text":"MakeTrax (Crush Roller).",
+               "correct":true
+            },
+            {
+               "text":"Tempest.",
+               "correct":false
+            },
+            {
+               "text":"MotorStorm.",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"In classic video game jargon, what is the term 'Blue Light District' referring to?",
+         "categories":[
+            "Arcade",
+            "1980's"
+         ],
+         "difficulty":5,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"An area created by an anti-arcade zoning law.",
+               "correct":true
+            },
+            {
+               "text":"The color glow from the arcade machines in a darkened space.",
+               "correct":false
+            },
+            {
+               "text":"An area of reserved arcade machines.",
+               "correct":false
+            },
+            {
+               "text":"Blue light is referring to a type of beverage popular at this time.",
+               "correct":false
+            },
+            {
+               "text":"An Inviso Anti-matter Cloaking Device (IACD).",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"What is the name of the character represented by the player in the classic game 'Donkey Kong'?",
+         "categories":[
+            "Arcade",
+            "1980's",
+            "Nintendo"
+         ],
+         "difficulty":5,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Mario.",
+               "correct":false
+            },
+            {
+               "text":"Jumpman.",
+               "correct":true
+            },
+            {
+               "text":"Zelda.",
+               "correct":false
+            },
+            {
+               "text":"Luigi.",
+               "correct":false
+            },
+            {
+               "text":"Donkey Kong.",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"What are two popular 'Atari' classic arcade games that were designed by the same person?",
+         "categories":[
+            "Arcade",
+            "1980's"
+         ],
+         "difficulty":7,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"'Asteroids' and 'Breakout'.",
+               "correct":false
+            },
+            {
+               "text":"'Battlezone' and 'Adventure'.",
+               "correct":false
+            },
+            {
+               "text":"'Missile Command' and 'Tempest'.",
+               "correct":true
+            },
+            {
+               "text":"'Crystal Castles' and 'Combat'.",
+               "correct":false
+            },
+            {
+               "text":"'Yars' Revenge' and 'Lunar Lander'.",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"In the classic arcade game 'Defender', how many points will one recieve for destroying a 'pod'?",
+         "categories":[
+            "Arcade",
+            "1980's"
+         ],
+         "difficulty":3,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"1000.",
+               "correct":true
+            },
+            {
+               "text":"200.",
+               "correct":false
+            },
+            {
+               "text":"150.",
+               "correct":false
+            },
+            {
+               "text":"250.",
+               "correct":false
+            },
+            {
+               "text":"100.",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"Which classic arcade game has the same name as a play by William Shakespeare?",
+         "categories":[
+            "Arcade",
+            "1980's"
+         ],
+         "difficulty":5,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Pac Man.",
+               "correct":false
+            },
+            {
+               "text":"Galaga.",
+               "correct":false
+            },
+            {
+               "text":"Missle Command.",
+               "correct":false
+            },
+            {
+               "text":"Tempest.",
+               "correct":true
+            },
+            {
+               "text":"Gauntlet.",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"In the classic arcade game, 'Space Invaders', what is the minimum number of 'Invaders' to appear on the screen for a 'Mother Ship' to appear?",
+         "categories":[
+            "Arcade",
+            "1980's"
+         ],
+         "difficulty":6,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Seven. ",
+               "correct":false
+            },
+            {
+               "text":"Eight.",
+               "correct":true
+            },
+            {
+               "text":"Five.",
+               "correct":false
+            },
+            {
+               "text":"Three.",
+               "correct":false
+            },
+            {
+               "text":"No specific number.",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"Which one of these classic arcade games was designed by a woman?",
+         "categories":[
+            "Arcade",
+            "1980's"
+         ],
+         "difficulty":3,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Galaxian.",
+               "correct":false
+            },
+            {
+               "text":"Q*Bert.",
+               "correct":false
+            },
+            {
+               "text":"Joust.",
+               "correct":false
+            },
+            {
+               "text":"Xevious.",
+               "correct":false
+            },
+            {
+               "text":"Centipede.",
+               "correct":true
+            }
+         ]
+      },
+      {
+         "text":"In the classic arcade game 'Missle Command', what are the names of the three missile bases?",
+         "categories":[
+            "Arcade",
+            "1980's"
+         ],
+         "difficulty":7,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Alpha, Bravo and Charlie.",
+               "correct":false
+            },
+            {
+               "text":"One, Two, Three.",
+               "correct":false
+            },
+            {
+               "text":"Alpha, Delta and Omega.",
+               "correct":true
+            },
+            {
+               "text":"Green, Blue and Red.",
+               "correct":false
+            },
+            {
+               "text":"X, Y and Z.",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"Which of the following games is not included in the 6-pack Sega Genesis cartridge?",
+         "categories":[
+            "Console",
+            "1990's",
+            "Sega"
+         ],
+         "difficulty":8,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Columns",
+               "correct":false
+            },
+            {
+               "text":"Ecco the Dolphin.",
+               "correct":true
+            },
+            {
+               "text":"Super Hang-On.",
+               "correct":false
+            },
+            {
+               "text":"The Revenge of Shinobi.",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"In which Sega Genesis game do you play as John and Eric?",
+         "categories":[
+            "Console",
+            "1990's",
+            "Sega"
+         ],
+         "difficulty":4,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Bonanza Bros.",
+               "correct":false
+            },
+            {
+               "text":"Contra: Hard Corps.",
+               "correct":false
+            },
+            {
+               "text":"Castlevania: Bloodlines.",
+               "correct":true
+            },
+            {
+               "text":"Snow Bros.",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"Who stars in the Sega 'Shinobi' series of games?",
+         "categories":[
+            "Console",
+            "1990's",
+            "Sega"
+         ],
+         "difficulty":5,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Joe.",
+               "correct":true
+            },
+            {
+               "text":"Hiryu.",
+               "correct":false
+            },
+            {
+               "text":"Ken.",
+               "correct":false
+            },
+            {
+               "text":"Ryu.",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"Which of the following Sega Genesis shoot 'em ups did not scroll vertically?",
+         "categories":[
+            "Console",
+            "1990's",
+            "Sega"
+         ],
+         "difficulty":3,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Battle Squadron.",
+               "correct":false
+            },
+            {
+               "text":"Elemental Master.",
+               "correct":false
+            },
+            {
+               "text":"Vapor Trail.",
+               "correct":false
+            },
+            {
+               "text":"Gaiares.",
+               "correct":true
+            }
+         ]
+      },
+      {
+         "text":"Which Sega Genesis game has the weapon types Force, Lightning, Chaser and Fire?",
+         "categories":[
+            "Console",
+            "1990's",
+            "Sega"
+         ],
+         "difficulty":4,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Alisia Dragoon.",
+               "correct":false
+            },
+            {
+               "text":"Gunstar Hereos.",
+               "correct":true
+            },
+            {
+               "text":"Bio-Hazard Battle.",
+               "correct":false
+            },
+            {
+               "text":"Thunder Force 3.",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"Which character is not playable in the game 'Streets of Rage 2'?",
+         "categories":[
+            "Console",
+            "1990's",
+            "Sega"
+         ],
+         "difficulty":3,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Adam.",
+               "correct":true
+            },
+            {
+               "text":"Blaze.",
+               "correct":false
+            },
+            {
+               "text":"Axel.",
+               "correct":false
+            },
+            {
+               "text":"Max.",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"Which Sega Genesis game is also known as 'The Story of Thor'?",
+         "categories":[
+            "Console",
+            "1990's",
+            "Sega"
+         ],
+         "difficulty":7,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Sword of Vermillion.",
+               "correct":false
+            },
+            {
+               "text":"Shining Force.",
+               "correct":false
+            },
+            {
+               "text":"Beyond Oasis.",
+               "correct":true
+            },
+            {
+               "text":"Truxton.",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"Which Sega Genesis game is also known as 'Assault Suit Leynos'?",
+         "categories":[
+            "Console",
+            "1990's",
+            "Sega"
+         ],
+         "difficulty":7,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Pulseman.",
+               "correct":false
+            },
+            {
+               "text":"Ranger X.",
+               "correct":false
+            },
+            {
+               "text":"Target Earth.",
+               "correct":true
+            },
+            {
+               "text":"Truxton.",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"Which of the following Sega Genesis games was not developed by Sega Technical Instituse?",
+         "categories":[
+            "Console",
+            "1990's",
+            "Sega"
+         ],
+         "difficulty":8,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Comix Zone.",
+               "correct":false
+            },
+            {
+               "text":"Sonic 3D Blast.",
+               "correct":true
+            },
+            {
+               "text":"Kid Chameleon.",
+               "correct":false
+            },
+            {
+               "text":"The Ooze.",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"What two games were originally sold with the NES system when it was released in 1985?",
+         "categories":[
+            "Console",
+            "1980's",
+            "Nintendo"
+         ],
+         "difficulty":3,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"'Super Mario Bros.' and 'Duck Hunt'.",
+               "correct":false
+            },
+            {
+               "text":"'Gyromite' and 'Duck Hunt'.",
+               "correct":true
+            },
+            {
+               "text":"'Tetris' and 'Megaman'.",
+               "correct":false
+            },
+            {
+               "text":"'The Legend of Zelda' and 'Tetris'.",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"True or False: Both 'The Legend of Zelda' and its sequel came with gold-colored cartidges when they were released.",
+         "categories":[
+            "Console",
+            "1980's",
+            "Nintendo"
+         ],
+         "difficulty":3,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"True.",
+               "correct":true
+            },
+            {
+               "text":"False.",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"True or False: Zelda from the classic NES game is named after Zelda Fitzgerald.",
+         "categories":[
+            "Console",
+            "1980's",
+            "Nintendo"
+         ],
+         "difficulty":4,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"True.",
+               "correct":true
+            },
+            {
+               "text":"False.",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"True or False: You can make it all the way to the final boss in 'The Legend of Zelda' without ever finding Link's sword.",
+         "categories":[
+            "Console",
+            "1980's",
+            "Nintendo"
+         ],
+         "difficulty":6,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"True.",
+               "correct":true
+            },
+            {
+               "text":"False.",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"What mystical object is Link searching for in 'The Legend of Zelda'?",
+         "categories":[
+            "Console",
+            "1980's",
+            "Nintendo"
+         ],
+         "difficulty":1,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Truffles.",
+               "correct":false
+            },
+            {
+               "text":"Triforce.",
+               "correct":true
+            },
+            {
+               "text":"Wand of Gamelon.",
+               "correct":false
+            },
+            {
+               "text":"Power Stars.",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"How many copies of the NES version of 'Super Mario Bros.' did Nintendo sell?",
+         "categories":[
+            "Console",
+            "1980's",
+            "Nintendo"
+         ],
+         "difficulty":7,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"40 million.",
+               "correct":true
+            },
+            {
+               "text":"4 billion.",
+               "correct":false
+            },
+            {
+               "text":"400 thousand.",
+               "correct":false
+            },
+            {
+               "text":"40 billion.",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"Who is the main villian that Mario must defeat in the original 'Super Mario Bros.?'",
+         "categories":[
+            "Console",
+            "1980's",
+            "Nintendo"
+         ],
+         "difficulty":1,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Princess Peach.",
+               "correct":false
+            },
+            {
+               "text":"Ganon.",
+               "correct":false
+            },
+            {
+               "text":"Bowser.",
+               "correct":true
+            },
+            {
+               "text":"Yoshi.",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"Who are the mushroom-like enemies that act as obstacles in Mario's quest?",
+         "categories":[
+            "Console",
+            "1980's",
+            "Nintendo"
+         ],
+         "difficulty":1,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Tanooki.",
+               "correct":false
+            },
+            {
+               "text":"Koopas.",
+               "correct":false
+            },
+            {
+               "text":"Deku Scrubs.",
+               "correct":false
+            },
+            {
+               "text":"Goombas.",
+               "correct":true
+            }
+         ]
+      },
+      {
+         "text":"How many different playable characters are there in 'Super Mario Bros. 2'?",
+         "categories":[
+            "Console",
+            "1980's",
+            "Nintendo"
+         ],
+         "difficulty":4,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Four.",
+               "correct":true
+            },
+            {
+               "text":"Two.",
+               "correct":false
+            },
+            {
+               "text":"Five.",
+               "correct":false
+            },
+            {
+               "text":"One.",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"What is the Princess' special talent in 'Super Mario Bros. 2'?",
+         "categories":[
+            "Console",
+            "1980's",
+            "Nintendo"
+         ],
+         "difficulty":3,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"She can float.",
+               "correct":true
+            },
+            {
+               "text":"She can one hit knock-out certain enemies.",
+               "correct":false
+            },
+            {
+               "text":"She can shrink or grow.",
+               "correct":false
+            },
+            {
+               "text":"She is the fastest swimmer.",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"What does the POW block do in 'Super Mario Bros. 2'?",
+         "categories":[
+            "Console",
+            "1980's",
+            "Nintendo"
+         ],
+         "difficulty":2,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Turns each character invisible.",
+               "correct":false
+            },
+            {
+               "text":"Skips to the next level.",
+               "correct":false
+            },
+            {
+               "text":"Allows a character switch.",
+               "correct":false
+            },
+            {
+               "text":"Defeats all visible enemies.",
+               "correct":true
+            }
+         ]
+      },
+      {
+         "text":"In 'Super Mario Bros. 3' what animal does Mario transform into when he finds the Super Leaf?",
+         "categories":[
+            "Console",
+            "1980's",
+            "Nintendo"
+         ],
+         "difficulty":2,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Raccoon.",
+               "correct":true
+            },
+            {
+               "text":"Frog.",
+               "correct":false
+            },
+            {
+               "text":"Dinosaur.",
+               "correct":false
+            },
+            {
+               "text":"Cat.",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"In 'Super Mario Bros. 3' what extra power does Mario get from a Tanooki Suit?",
+         "categories":[
+            "Console",
+            "1980's",
+            "Nintendo"
+         ],
+         "difficulty":3,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Ability to swim fast.",
+               "correct":false
+            },
+            {
+               "text":"Ability to gain extra height when jumping.",
+               "correct":false
+            },
+            {
+               "text":"Ability to turn to stone.",
+               "correct":true
+            },
+            {
+               "text":"Ability to fly.",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"How does Uncle Scrooge attack enemies in the NES version of 'DuckTales'?",
+         "categories":[
+            "Console",
+            "1980's",
+            "Nintendo"
+         ],
+         "difficulty":3,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Shooting fire.",
+               "correct":false
+            },
+            {
+               "text":"Pogo stick attack.",
+               "correct":true
+            },
+            {
+               "text":"Rock throw.",
+               "correct":false
+            },
+            {
+               "text":"Water gun.",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"How many 'Mega Man' games were released for the NES?",
+         "categories":[
+            "Console",
+            "1980's",
+            "Nintendo"
+         ],
+         "difficulty":4,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"One.",
+               "correct":false
+            },
+            {
+               "text":"Five.",
+               "correct":false
+            },
+            {
+               "text":"Eight.",
+               "correct":false
+            },
+            {
+               "text":"Six.",
+               "correct":true
+            }
+         ]
+      },
+      {
+         "text":"Which NES game starred the protaganist 'Samus Aran'?",
+         "categories":[
+            "Console",
+            "1980's",
+            "Nintendo"
+         ],
+         "difficulty":1,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Mega Man.",
+               "correct":false
+            },
+            {
+               "text":"Metroid.",
+               "correct":true
+            },
+            {
+               "text":"The Legend of Zelda.",
+               "correct":false
+            },
+            {
+               "text":"Castlevania.",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"What RPG (role-playing game) released in 1989 was a precursor to the game 'Final Fantasy'?",
+         "categories":[
+            "Console",
+            "1980's",
+            "Nintendo"
+         ],
+         "difficulty":4,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Chrono Trigger.",
+               "correct":false
+            },
+            {
+               "text":"Secret of Mana.",
+               "correct":false
+            },
+            {
+               "text":"Dragon Warrior.",
+               "correct":true
+            },
+            {
+               "text":"Dragon Quest.",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"What did the characters in the game 'Teenage Mutant Ninja Turtles' need to collect to restore health?",
+         "categories":[
+            "Console",
+            "1980's",
+            "Nintendo"
+         ],
+         "difficulty":3,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Coins.",
+               "correct":false
+            },
+            {
+               "text":"Pizzas.",
+               "correct":true
+            },
+            {
+               "text":"Elixirs.",
+               "correct":false
+            },
+            {
+               "text":"Health Orbs.",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"What happend when the character 'Arthur' took a hit in the game 'Ghost'n Goblins'?",
+         "categories":[
+            "Console",
+            "1980's",
+            "Nintendo"
+         ],
+         "difficulty":2,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"He lost his armor.",
+               "correct":true
+            },
+            {
+               "text":"He was knocked out.",
+               "correct":false
+            },
+            {
+               "text":"The player recieved a 'Game-Over'.",
+               "correct":false
+            },
+            {
+               "text":"Nothing really.",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"Which NES game features characters named 'Rash', 'Pimple' and 'Zits'?",
+         "categories":[
+            "Console",
+            "1980's",
+            "Nintendo"
+         ],
+         "difficulty":3,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"Teenage Mutant Ninja Turtles.",
+               "correct":false
+            },
+            {
+               "text":"Ghost'n Goblins.",
+               "correct":false
+            },
+            {
+               "text":"Final Fantasy.",
+               "correct":false
+            },
+            {
+               "text":"Battletoads.",
+               "correct":true
+            }
+         ]
+      },
+      {
+         "text":"How many video games were available when the NES launched in North America in October of 1985?",
+         "categories":[
+            "Console",
+            "1980's",
+            "Nintendo"
+         ],
+         "difficulty":8,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"5.",
+               "correct":false
+            },
+            {
+               "text":"17.",
+               "correct":true
+            },
+            {
+               "text":"10.",
+               "correct":false
+            },
+            {
+               "text":"24.",
+               "correct":false
+            }
+         ]
+      },
+      {
+         "text":"True or False: Blowing into the NES game cartridges was a good way to ensure they worked properly.",
+         "categories":[
+            "Console",
+            "1980's",
+            "Nintendo"
+         ],
+         "difficulty":9,
+         "image":"nil",
+         "answers":[
+            {
+               "text":"True.",
+               "correct":false
+            },
+            {
+               "text":"False.",
+               "correct":true
+            }
+         ]
+      }
+   ]
+}

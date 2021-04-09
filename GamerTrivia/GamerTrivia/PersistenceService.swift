@@ -65,19 +65,19 @@ public class PersistenceService {
                 print ("Setting up Sample Data and Default Scores")
             }
         
-        if let localData = self.readLocalFile(forName: "GamerTrivia") {
+        if let localData = self.readLocalFile(forName: "data") {
             self.parse(jsonData: localData)
         }
     }
     
     private func readLocalFile(forName name: String) -> Data? {
         do {
-            if let bundlePath = Bundle.main.path(forResource: "GamerTrivia", ofType: "json"),
+            if let bundlePath = Bundle.main.path(forResource: name, ofType: "json"),
                let jsonData = try String(contentsOfFile: bundlePath).data(using: .utf8)
             {
+                print ("[PersistenceService] JSON Data Found...")
                 return jsonData
             }
-            print ("Reading JSON file")
         } catch {
             print(error)
         }
@@ -92,12 +92,12 @@ public class PersistenceService {
                 
                 guard let categoriesJsonArray = json["categories"] as? [String] else
                 {
-                    return print("error unwrapping json objects")
+                    return print("[PersistenceService] error unwrapping json objects")
                 }
                 
                 guard let questionsJsonArray = json["questions"] as? [AnyObject] else
                 {
-                    return print("error unwrapping json objects")
+                    return print("[PersistenceService] error unwrapping json objects")
                 }
                 
                 self.saveCategoriesInCoreDataWith(array: categoriesJsonArray)
@@ -105,7 +105,7 @@ public class PersistenceService {
                 for question in questionsJsonArray {
                     self.saveQuestionsInCoreDataWith(array: question as! [String : AnyObject])
                 }
-               print ("Parsing JSON file")
+               print ("[PersistenceService] Parsing JSON file")
             }
         } catch let error {
             print(error)
