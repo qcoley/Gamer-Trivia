@@ -99,7 +99,6 @@ class CategoryViewController: UIViewController, UITableViewDelegate, UITableView
             let vc = segue.destination as! GameViewController
             vc.selectedCategory = passedCat!
             vc.modalPresentationStyle = .fullScreen
-            present(vc, animated: true)
         }
     }
 }
