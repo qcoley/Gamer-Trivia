@@ -88,7 +88,7 @@ class CategoryViewController: UIViewController, UITableViewDelegate, UITableView
     // Code for start game button
     @IBAction func startGame() {
         playSound(soundToPlay: "pacman_beginning")
-        performSegue(withIdentifier: "StartGame", sender: self)
+        self.performSegue(withIdentifier: "StartGame", sender: self)
     }
     
     // Sets up passing the currently selected Category to the GameControllerView for filtering
