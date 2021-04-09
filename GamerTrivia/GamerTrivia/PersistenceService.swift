@@ -34,7 +34,7 @@ public class PersistenceService {
         if context.hasChanges {
             do {
                 try context.save()
-                print("saved successfully")
+                print("[PersistenceService] Saved successfully")
             } catch {
                 let nserror = error as NSError
                 fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
@@ -56,13 +56,12 @@ public class PersistenceService {
     
     func loadPersistenceData(){
         
-            UserDefaults.resetStandardUserDefaults()
+//        UserDefaults.standard.removeObject(forKey: "hasRunOnce")
             
             if !UserDefaults.standard.bool(forKey: "hasRunOnce") {
                 UserDefaults.standard.setValue(true, forKey: "hasRunOnce")
-                setupSampleData()
+//                setupSampleData()
                 setUpDefaultScores()
-                print ("Setting up Sample Data and Default Scores")
             }
         
         if let localData = self.readLocalFile(forName: "data") {
@@ -141,7 +140,7 @@ public class PersistenceService {
                 return nil
             }
             else{
-                print("\(text) match found")
+//                print("\(text) match found")
         
             }
         } catch let error as NSError {
@@ -369,6 +368,7 @@ public class PersistenceService {
     }
     
     private func setUpDefaultScores() {
+        print ("[PersistenceService] Setting up default Highscores...")
         let defaultScore1 = NSEntityDescription.insertNewObject(forEntityName: "HighScores", into: context) as! HighScores
         defaultScore1.name = "DexWasHere"
         defaultScore1.score = 120
@@ -384,6 +384,10 @@ public class PersistenceService {
         let defaultScore4 = NSEntityDescription.insertNewObject(forEntityName: "HighScores", into: context) as! HighScores
         defaultScore4.name = "Thogrun"
         defaultScore4.score = 100
+        
+        let defaultScore5 = NSEntityDescription.insertNewObject(forEntityName: "HighScores", into: context) as! HighScores
+        defaultScore5.name = "Khang Vo"
+        defaultScore5.score = 1337
         
         save()
     }

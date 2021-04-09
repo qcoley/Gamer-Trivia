@@ -23,9 +23,7 @@ class HighScoresViewController: UIViewController, UITableViewDelegate, UITableVi
         present(vc, animated: true)
     }
     
-    
-    
-    let context = PersistenceService.shared
+    let context = PersistenceService.shared.persistentContainer.viewContext
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,18 +43,12 @@ class HighScoresViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     
     func getScores() {
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-            return
-        }
-        let managedContext = appDelegate.persistentContainer.viewContext
-        
         let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "HighScores")
         fetchRequest.sortDescriptors = [NSSortDescriptor(key: "score", ascending: false)]
         
         do {
-            highscores = try ((managedContext.fetch(fetchRequest) as? [HighScores])!)
-        table.reloadData()
-            print(highscores as Any)
+            highscores = try ((context.fetch(fetchRequest) as? [HighScores])!)
+            table.reloadData()
         } catch let err as NSError {
             print ("Could not fetch. \(err), \(err.userInfo)")
         }
@@ -95,8 +87,13 @@ class HighScoresViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     
     private func evaluateScore() {
-        print (passedScore, highscores?.last?.score as Any, highscores!.count)
-        if passedScore > (highscores?.last?.score)! && highscores!.count < 10 {
+//        print (passedScore, highscores?.last?.score as Any, highscores!.count)
+        if (highscores == nil) {return}
+        
+        if (highscores!.isEmpty || highscores!.count < 10) {
+            createCustomAlert()
+        }else if (passedScore > (highscores?.last?.score)!) {
+            context.delete((highscores?.last!)!)
             createCustomAlert()
         }
     }

@@ -23,8 +23,7 @@ class AddHighScoreViewController: UIViewController {
     }
     
     @IBAction func saveData(_ sender: Any) {
-        let appDelegate = UIApplication.shared.delegate as? AppDelegate
-        let context = appDelegate!.persistentContainer.viewContext
+        let context = PersistenceService.shared.persistentContainer.viewContext
         let entity = NSEntityDescription.entity(forEntityName: "HighScores", in: context)
         let newHighScore = NSManagedObject(entity: entity!, insertInto: context)
         newHighScore.setValue(name.text, forKey: "name")

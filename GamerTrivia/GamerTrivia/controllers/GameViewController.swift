@@ -35,7 +35,7 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
         table.delegate = self
         table.dataSource = self
         fetchQuestions()
-        chosenQuestionArray = Array(Set(questionset)).shuffled().suffix(10)
+        chosenQuestionArray = Array(Set(questionset)).shuffled().suffix(1)
         configureUI(question: (chosenQuestionArray.first!))
     }
     
@@ -95,7 +95,6 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     private func isThisTheLastQuestion() {
-        print (currentQuestionCounter, chosenQuestionArray.count)
         if currentQuestionCounter == chosenQuestionArray.count + 1 {
             gameFinal()
         } else {
@@ -185,7 +184,7 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
             let vc = segue.destination as! HighScoresViewController
             vc.passedScore = passedScore
             vc.modalPresentationStyle = .fullScreen
-            present(vc, animated: true)
+//            present(vc, animated: true)
         }
     }
 }

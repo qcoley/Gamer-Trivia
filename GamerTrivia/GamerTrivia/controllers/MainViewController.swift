@@ -13,7 +13,15 @@ import AVFoundation
 class MainViewController: UIViewController {
     
     var audioPlayer: AVAudioPlayer?
-
+    
+    let sharedPersistence = PersistenceService.shared
+    
+    @IBAction func resetData(_ sender: Any) {
+        deleteData()
+        UserDefaults.standard.removeObject(forKey: "hasRunOnce")
+        sharedPersistence.loadPersistenceData()
+    }
+    
     @IBAction func insertCoin() {
         playSound(soundToPlay: "insertCoin")
         let vc = storyboard?.instantiateViewController(identifier: "genre") as! CategoryViewController
@@ -27,12 +35,7 @@ class MainViewController: UIViewController {
         
         view.addBackground()
         
-        let managedContext = PersistenceService.shared.persistentContainer.viewContext
-        managedContext.performAndWait {
-            deleteData()
-        }
-        
-        PersistenceService.shared.loadPersistenceData()
+        sharedPersistence.loadPersistenceData()
     }
     
     private func playSound (soundToPlay: String) {
@@ -53,9 +56,11 @@ class MainViewController: UIViewController {
         let categoryDeleteRequest = NSBatchDeleteRequest(fetchRequest: categoryFetchRequest)
         let questionFetchRequest: NSFetchRequest<NSFetchRequestResult> = Questions.fetchRequest()
         let questionDeleteRequest = NSBatchDeleteRequest(fetchRequest: questionFetchRequest)
+        let highscoresFetchRequest: NSFetchRequest<NSFetchRequestResult> = HighScores.fetchRequest()
+        let highscoresDeleteRequest = NSBatchDeleteRequest(fetchRequest: highscoresFetchRequest)
 
         // get reference to the persistent container
-        let persistentContainer = PersistenceService.shared.persistentContainer
+        let persistentContainer = sharedPersistence.persistentContainer
 
         // perform the delete
         do {
@@ -66,6 +71,12 @@ class MainViewController: UIViewController {
         
         do {
             try persistentContainer.viewContext.execute(questionDeleteRequest)
+        } catch let error as NSError {
+            print(error)
+        }
+        
+        do {
+            try persistentContainer.viewContext.execute(highscoresDeleteRequest)
         } catch let error as NSError {
             print(error)
         }
