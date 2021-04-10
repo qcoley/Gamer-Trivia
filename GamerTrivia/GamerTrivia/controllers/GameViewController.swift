@@ -38,7 +38,7 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
         table.delegate = self
         table.dataSource = self
         fetchQuestions()
-        chosenQuestionArray = Array(Set(questionset)).shuffled().suffix(1)
+        chosenQuestionArray = Array(Set(questionset)).shuffled().suffix(10)
         configureUI(question: (chosenQuestionArray.first!))
     }
     
@@ -198,6 +198,7 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.reloadData()
         tableView.deselectRow(at: indexPath, animated: true)
         guard let question = currentQuestion else { return }
         let answers = answerset[indexPath.row]

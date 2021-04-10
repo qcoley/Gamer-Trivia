@@ -23,7 +23,6 @@
 		B932AA4725FA6DF4009CD43E /* GamerTriviaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B932AA4625FA6DF4009CD43E /* GamerTriviaTests.swift */; };
 		B932AA5225FA6DF4009CD43E /* GamerTriviaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B932AA5125FA6DF4009CD43E /* GamerTriviaUITests.swift */; };
 		B932AA6625FAC90C009CD43E /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B932AA6525FAC90C009CD43E /* CategoryViewController.swift */; };
-		B932AA7125FACFAB009CD43E /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B932AA7025FACFAB009CD43E /* FirstViewController.swift */; };
 		B932AA7626029D22009CD43E /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = B932AA7526029D22009CD43E /* Category.swift */; };
 		EC105545260F1E2200050F35 /* pacman_eatghost.wav in Resources */ = {isa = PBXBuildFile; fileRef = EC10553E260F1E2200050F35 /* pacman_eatghost.wav */; };
 		EC105546260F1E2200050F35 /* pacman_chomp.wav in Resources */ = {isa = PBXBuildFile; fileRef = EC10553F260F1E2200050F35 /* pacman_chomp.wav */; };
@@ -85,7 +84,6 @@
 		B932AA5125FA6DF4009CD43E /* GamerTriviaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamerTriviaUITests.swift; sourceTree = "<group>"; };
 		B932AA5325FA6DF4009CD43E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B932AA6525FAC90C009CD43E /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
-		B932AA7025FACFAB009CD43E /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		B932AA7526029D22009CD43E /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		B9A82D60260D4E1300B00999 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		EC10553E260F1E2200050F35 /* pacman_eatghost.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pacman_eatghost.wav; sourceTree = "<group>"; };
@@ -136,7 +134,6 @@
 		A561922E2602C8320062272A /* controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B932AA7025FACFAB009CD43E /* FirstViewController.swift */,
 				B932AA6525FAC90C009CD43E /* CategoryViewController.swift */,
 				ECCA9A942603E72C00CB1EFF /* GameViewController.swift */,
 				B9A82D60260D4E1300B00999 /* MenuViewController.swift */,
@@ -398,7 +395,6 @@
 				A5C8F6BA260EB0BD001A4D13 /* Answers+CoreDataProperties.swift in Sources */,
 				A5C8F6BC260EB0BD001A4D13 /* Categories+CoreDataProperties.swift in Sources */,
 				ECC62DCC261CB42700CCEFB3 /* HighScores+CoreDataProperties.swift in Sources */,
-				B932AA7125FACFAB009CD43E /* FirstViewController.swift in Sources */,
 				A5C8F6BB260EB0BD001A4D13 /* Categories+CoreDataClass.swift in Sources */,
 				B932AA6625FAC90C009CD43E /* CategoryViewController.swift in Sources */,
 				ECC62DCB261CB42700CCEFB3 /* HighScores+CoreDataClass.swift in Sources */,
@@ -591,7 +587,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = M377CJTF5Y;
+				DEVELOPMENT_TEAM = N239LP6324;
 				INFOPLIST_FILE = GamerTrivia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -610,7 +606,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = M377CJTF5Y;
+				DEVELOPMENT_TEAM = N239LP6324;
 				INFOPLIST_FILE = GamerTrivia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -629,7 +625,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = M377CJTF5Y;
+				DEVELOPMENT_TEAM = N239LP6324;
 				INFOPLIST_FILE = GamerTriviaTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -651,7 +647,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = M377CJTF5Y;
+				DEVELOPMENT_TEAM = N239LP6324;
 				INFOPLIST_FILE = GamerTriviaTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -672,7 +668,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = M377CJTF5Y;
+				DEVELOPMENT_TEAM = N239LP6324;
 				INFOPLIST_FILE = GamerTriviaUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -692,7 +688,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = M377CJTF5Y;
+				DEVELOPMENT_TEAM = N239LP6324;
 				INFOPLIST_FILE = GamerTriviaUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
