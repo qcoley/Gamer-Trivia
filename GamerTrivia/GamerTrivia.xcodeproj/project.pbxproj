@@ -342,8 +342,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B932AA2825FA6DEF009CD43E /* GamerTrivia */,
 				B932AA4125FA6DF4009CD43E /* GamerTriviaTests */,
+				B932AA2825FA6DEF009CD43E /* GamerTrivia */,
 				B932AA4C25FA6DF4009CD43E /* GamerTriviaUITests */,
 			);
 		};
