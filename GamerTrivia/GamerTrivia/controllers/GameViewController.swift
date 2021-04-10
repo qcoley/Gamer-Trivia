@@ -49,6 +49,8 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
         currentQuestion = question
         scoreLabel.text = "Score: " + String(score)
         category.text = selectedCategory
+        selectedIncorrectIndex = IndexPath(row: -1, section: 0)
+        selectedCorrectIndex = IndexPath(row: -1, section: 0)
         table.reloadData()
     }
     
@@ -82,9 +84,9 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
         scoreLabel.text = "Score: " + String(score)
         playSound(soundToPlay: "pacman_death")
         // Comment out for Khang's change //
-        let alert = UIAlertController(title: "Incorrect", message: "You have been penalized 20 points.", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
-        present(alert, animated: true)
+//        let alert = UIAlertController(title: "Incorrect", message: "You have been penalized 20 points.", preferredStyle: .alert)
+//        alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
+//        present(alert, animated: true)
         // ////////////////////////////// //
     }
     
@@ -168,36 +170,36 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         // Uncomment to apply Khang's change //
         
-//        if selectedIncorrectIndex == indexPath {
-//            let textAttributes = [NSAttributedString.Key.foregroundColor: UIColor.gray]
-//            let pointAttributes = [NSAttributedString.Key.foregroundColor: UIColor.red]
-//
-//            let partOne = NSMutableAttributedString(string: cell.textLabel?.text ?? "", attributes: textAttributes)
-//            let partTwo = NSMutableAttributedString(string: " [-\(SCORE_PENALTY)]", attributes: pointAttributes)
-//
-//            let combination = NSMutableAttributedString()
-//
-//            combination.append(partOne)
-//            combination.append(partTwo)
-//
-//            cell.textLabel?.attributedText = combination
-//        }
-//
-//        if selectedCorrectIndex == indexPath {
-//            let earnedScore = 10 * Int(currentQuestion?.difficulty ?? 0)
-//            let textAttributes = [NSAttributedString.Key.foregroundColor: UIColor.systemGreen]
-//            let pointAttributes = [NSAttributedString.Key.foregroundColor: UIColor.green]
-//
-//            let partOne = NSMutableAttributedString(string: cell.textLabel?.text ?? "", attributes: textAttributes)
-//            let partTwo = NSMutableAttributedString(string: " [+\(earnedScore)]", attributes: pointAttributes)
-//
-//            let combination = NSMutableAttributedString()
-//
-//            combination.append(partOne)
-//            combination.append(partTwo)
-//
-//            cell.textLabel?.attributedText = combination
-//        }
+        if selectedIncorrectIndex == indexPath {
+            let textAttributes = [NSAttributedString.Key.foregroundColor: UIColor.gray]
+            let pointAttributes = [NSAttributedString.Key.foregroundColor: UIColor.red]
+
+            let partOne = NSMutableAttributedString(string: cell.textLabel?.text ?? "", attributes: textAttributes)
+            let partTwo = NSMutableAttributedString(string: " [-\(SCORE_PENALTY)]", attributes: pointAttributes)
+
+            let combination = NSMutableAttributedString()
+
+            combination.append(partOne)
+            combination.append(partTwo)
+
+            cell.textLabel?.attributedText = combination
+        }
+
+        if selectedCorrectIndex == indexPath {
+            let earnedScore = 10 * Int(currentQuestion?.difficulty ?? 0)
+            let textAttributes = [NSAttributedString.Key.foregroundColor: UIColor.systemGreen]
+            let pointAttributes = [NSAttributedString.Key.foregroundColor: UIColor.green]
+
+            let partOne = NSMutableAttributedString(string: cell.textLabel?.text ?? "", attributes: textAttributes)
+            let partTwo = NSMutableAttributedString(string: " [+\(earnedScore)]", attributes: pointAttributes)
+
+            let combination = NSMutableAttributedString()
+
+            combination.append(partOne)
+            combination.append(partTwo)
+
+            cell.textLabel?.attributedText = combination
+        }
         
         // ///////////////////////////////// //
         
