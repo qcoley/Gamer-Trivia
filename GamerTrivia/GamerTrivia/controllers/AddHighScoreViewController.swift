@@ -8,7 +8,7 @@
 import UIKit
 import CoreData
 
-class AddHighScoreViewController: UIViewController {
+class AddHighScoreViewController: UIViewController, UITextFieldDelegate {
     
     var parentVC: HighScoresViewController!
     
@@ -18,8 +18,18 @@ class AddHighScoreViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        name.delegate = self
         setupToLookPretty()
         score.text = String(parentVC.passedScore)
+    }
+    
+    func textFieldShouldReturn(_ name: UITextField) -> Bool {
+        name.resignFirstResponder()
+        return true
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
     
     @IBAction func saveData(_ sender: Any) {
