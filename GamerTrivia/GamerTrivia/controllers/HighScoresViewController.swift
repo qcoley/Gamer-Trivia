@@ -56,7 +56,11 @@ class HighScoresViewController: UIViewController, UITableViewDelegate, UITableVi
     
     // Table view functions
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return highscores!.count
+        if (highscores!.count > 10) {
+            return 10
+        } else {
+            return highscores!.count
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -92,7 +96,7 @@ class HighScoresViewController: UIViewController, UITableViewDelegate, UITableVi
         
         if (highscores!.isEmpty || highscores!.count < 10) {
             createCustomAlert()
-        }else if (passedScore > (highscores?.last?.score)!) {
+        } else if (passedScore > (highscores?.last?.score)!) {
             context.delete((highscores?.last!)!)
             createCustomAlert()
         }

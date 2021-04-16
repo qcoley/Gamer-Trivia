@@ -38,7 +38,7 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
         table.delegate = self
         table.dataSource = self
         fetchQuestions()
-        chosenQuestionArray = Array(Set(questionset)).shuffled().suffix(1)
+        chosenQuestionArray = Array(Set(questionset)).shuffled().suffix(10)
         configureUI(question: (chosenQuestionArray.first!))
     }
     
@@ -49,6 +49,8 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
         currentQuestion = question
         scoreLabel.text = "Score: " + String(score)
         category.text = selectedCategory
+        selectedIncorrectIndex = IndexPath(row: -1, section: 0)
+        selectedCorrectIndex = IndexPath(row: -1, section: 0)
         table.reloadData()
     }
     
@@ -81,9 +83,11 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
         score = score - SCORE_PENALTY
         scoreLabel.text = "Score: " + String(score)
         playSound(soundToPlay: "pacman_death")
+        // Comment out for Khang's change //
 //        let alert = UIAlertController(title: "Incorrect", message: "You have been penalized 20 points.", preferredStyle: .alert)
 //        alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
 //        present(alert, animated: true)
+        // ////////////////////////////// //
     }
     
     private func advanceCounter() {
@@ -101,6 +105,8 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
         if currentQuestionCounter == chosenQuestionArray.count + 1 {
             gameFinal()
         } else {
+
+
             nextQuestion()
         }
     }
@@ -135,7 +141,6 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
             
-//            as! AuteurTableViewCell
         answerset = currentQuestion?.answers?.allObjects as! [Answers]
         cell.textLabel?.text = answerset[indexPath.row].text
         
@@ -163,6 +168,8 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
         bgColorView.backgroundColor = UIColor.red
         cell.selectedBackgroundView = bgColorView
         
+        // Uncomment to apply Khang's change //
+        
         if selectedIncorrectIndex == indexPath {
             let textAttributes = [NSAttributedString.Key.foregroundColor: UIColor.gray]
             let pointAttributes = [NSAttributedString.Key.foregroundColor: UIColor.red]
@@ -174,10 +181,10 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
 
             combination.append(partOne)
             combination.append(partTwo)
-            
+
             cell.textLabel?.attributedText = combination
         }
-        
+
         if selectedCorrectIndex == indexPath {
             let earnedScore = 10 * Int(currentQuestion?.difficulty ?? 0)
             let textAttributes = [NSAttributedString.Key.foregroundColor: UIColor.systemGreen]
@@ -190,9 +197,11 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
 
             combination.append(partOne)
             combination.append(partTwo)
-            
+
             cell.textLabel?.attributedText = combination
         }
+        
+        // ///////////////////////////////// //
         
         return cell
     }

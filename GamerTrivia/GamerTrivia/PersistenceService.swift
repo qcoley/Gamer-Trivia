@@ -385,9 +385,9 @@ public class PersistenceService {
         defaultScore4.name = "Thogrun"
         defaultScore4.score = 100
         
-        let defaultScore5 = NSEntityDescription.insertNewObject(forEntityName: "HighScores", into: context) as! HighScores
-        defaultScore5.name = "Khang Vo"
-        defaultScore5.score = 1337
+//        let defaultScore5 = NSEntityDescription.insertNewObject(forEntityName: "HighScores", into: context) as! HighScores
+//        defaultScore5.name = "Khang Vo"
+//        defaultScore5.score = 1337
         
         save()
     }
